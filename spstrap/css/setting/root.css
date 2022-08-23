@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --font-size: 16px;                          /* 폰트 베이스 */
+    --line-height: 1.4;                         /* 폰트 행간 */
+    
+    --pc-width: 1536px;                         /* 피씨 기본 사이즈 1536px */
+    --mobile-width: 500px;                      /* 모바일 기본 사이즈 */
+
+    --clamp-zoom: .9;                           /* 반응형 배율 : PC -> MOBILE 크기 변화 */
+    --clamp-ratio: -0.9167rem + 3.2639vw;       /* 반응형 범위 : PC -> MOBILE 브라우저 크기에 반응 */
+
+    --zoom-3xs: .1;                             /* 요소의 크기 배율 */
+    --zoom-2xs: .25;
+    --zoom-xs: .5;
+    --zoom-sm: .75;
+    --zoom-md: 1;
+    --zoom-lg: 1.5;
+    --zoom-xl: 2;
+    --zoom-2xl: 2.5;
+    --zoom-3xl: 3;
+
+    --gap: 1rem;                                /* 모든 요소의 기본 여백 */
+    --ratio: .6;                                /* 텍스트 박스의 내부 여백 */
+
+    /* 
+        hsla(hue : 색상 (= 색조 = 색깔), 
+        saturation : 채도 (= 컬러 정도), 
+        lightness : 명도 (= 밝기), 
+        alpha : 불투명도) 
+    */
+
+    --color-text: #999;
+    --color-background: #111;
+
+    --hue: 360; /* 색상 1 ~ 360 */
+    --saturation: 50%; /* 채도 1 ~ 1000 */
+    --lightness: 50%; /* 밝기 1 ~ 1000 */
+    --alpha: 100%; /* 투명도 100 고정 */
+    --opacity: .3; /* 투명도 배율 */
+
+    --color-white: #fff;
+    --color-black: #111;
+    --color-button-text: #fff;
+    --color-button-text-reverse: #111;
+
+    /*
+    ** 애니메이션
+    */
+    --animate-duration:1s;
+    --animate-delay:1s;
+    --animate-repeat:1;
+    --animate-perspective:clamp(calc(var(--mobile-width) * var(--clamp-minmax)), var(--clamp-ratio), calc(var(--pc-width) * var(--clamp-minmax)));
+    --animate-move:30%;
+    --animate-move-max:100vw;
+    --animate-zoom:.95;
+}

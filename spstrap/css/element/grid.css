@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* 
+** 그리드
+*/
+.x-grid {
+    display: grid;
+    grid-auto-columns: auto;
+}
+.x-grid[grid="auto"] { grid-auto-flow: column; }
+.x-grid[grid="1"]  { grid-template-columns: repeat(auto-fit, minmax(100.00%, 1fr)); }
+.x-grid[grid="2"]  { grid-template-columns: repeat(auto-fit, minmax(50.000%, 1fr)); }
+.x-grid[grid="3"]  { grid-template-columns: repeat(auto-fit, minmax(33.333%, 1fr)); }
+.x-grid[grid="4"]  { grid-template-columns: repeat(auto-fit, minmax(25.000%, 1fr)); }
+.x-grid[grid="5"]  { grid-template-columns: repeat(auto-fit, minmax(20.000%, 1fr)); }
+.x-grid[grid="6"]  { grid-template-columns: repeat(auto-fit, minmax(16.666%, 1fr)); }
+.x-grid[grid="7"]  { grid-template-columns: repeat(auto-fit, minmax(14.285%, 1fr)); }
+.x-grid[grid="8"]  { grid-template-columns: repeat(auto-fit, minmax(12.500%, 1fr)); }
+.x-grid[grid="9"]  { grid-template-columns: repeat(auto-fit, minmax(11.111%, 1fr)); }
+.x-grid[grid="10"] { grid-template-columns: repeat(auto-fit, minmax(10.000%, 1fr)); }
+.x-grid[grid="1-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(100.00%, min(var(--mobile-width),calc(var(--pc-width) / 1)), 100%), 1fr)); }
+.x-grid[grid="2-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(50.000%, min(var(--mobile-width),calc(var(--pc-width) / 2)), 100%), 1fr)); }
+.x-grid[grid="3-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(33.333%, min(var(--mobile-width),calc(var(--pc-width) / 3)), 100%), 1fr)); }
+.x-grid[grid="4-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(25.000%, min(var(--mobile-width),calc(var(--pc-width) / 4)), 100%), 1fr)); }
+.x-grid[grid="5-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(20.000%, min(var(--mobile-width),calc(var(--pc-width) / 5)), 100%), 1fr)); }
+.x-grid[grid="6-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(16.666%, min(var(--mobile-width),calc(var(--pc-width) / 6)), 100%), 1fr)); }
+.x-grid[grid="7-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(14.285%, min(var(--mobile-width),calc(var(--pc-width) / 7)), 100%), 1fr)); }
+.x-grid[grid="8-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(12.500%, min(var(--mobile-width),calc(var(--pc-width) / 8)), 100%), 1fr)); }
+.x-grid[grid="9-res"]  { grid-template-columns: repeat(auto-fit, minmax(clamp(11.111%, min(var(--mobile-width),calc(var(--pc-width) / 9)), 100%), 1fr)); }
+.x-grid[grid="10-res"] { grid-template-columns: repeat(auto-fit, minmax(clamp(10.000%, min(var(--mobile-width),calc(var(--pc-width) / 10)), 100%), 1fr)); }
+.x-grid[sort*="h-stretch"] { justify-content: stretch; }
+.x-grid[sort*="h-start"] { justify-content: start; }
+.x-grid[sort*="h-center"] { justify-content: center; }
+.x-grid[sort*="h-end"] { justify-content: end; }
+.x-grid[sort*="h-between"] { justify-content: space-between; }
+.x-grid[sort*="h-around"] { justify-content: space-around; }
+.x-grid[sort*="h-evenly"] { justify-content: space-evenly; }
+.x-grid[sort*="v-stretch"] { align-items: stretch; }
+.x-grid[sort*="v-start"] { align-content: start; }
+.x-grid[sort*="v-center"] { align-content: center; }
+.x-grid[sort*="v-end"] { align-content: end; }
+.x-grid[sort*="v-between"] { align-content: space-between; }
+.x-grid[sort*="v-around"] { align-content: space-around; }
+.x-grid[sort*="v-evenly"] { align-content: space-evenly; }
+.x-grid[split="h-min-auto"] { grid-template-columns: max-content auto; }
+.x-grid[split="h-auto-min"] { grid-template-columns: auto max-content; }
+.x-grid[split="h-min-auto-min"] { grid-template-columns: max-content auto max-content; }
+.x-grid[split="v-min-auto"] { grid-template-rows: max-content auto; }
+.x-grid[split="v-auto-min"] { grid-template-rows: auto max-content; }
+.x-grid[split="v-min-auto-min"] { grid-template-rows: max-content auto max-content; }
+.x-grid-col[sort*="h-start"] { justify-self: start; }
+.x-grid-col[sort*="h-center"] { justify-self: center; }
+.x-grid-col[sort*="h-end"] { justify-self: end; }
+.x-grid-col[sort*="v-start"] { align-self: start; }
+.x-grid-col[sort*="v-center"] { align-self: center; }
+.x-grid-col[sort*="v-end"] { align-self: end; }

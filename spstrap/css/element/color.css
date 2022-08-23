@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root {
+
+    --color-primary: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+
+    --color-prev-1: hsla(0, 0%, 95%, 1);
+    --color-prev-2: hsla(0, 0%, 90%, 1);
+    --color-prev-3: hsla(0, 0%, 85%, 1);
+    --color-prev-4: hsla(0, 0%, 80%, 1);
+    --color-prev-5: hsla(0, 0%, 75%, 1);
+    --color-prev-6: hsla(0, 0%, 70%, 1);
+    --color-prev-7: hsla(0, 0%, 65%, 1);
+    --color-prev-8: hsla(0, 0%, 60%, 1);
+    --color-prev-9: hsla(0, 0%, 55%, 1);
+
+    --color-next-1: hsla(0, 0%, 45%, 1);
+    --color-next-2: hsla(0, 0%, 40%, 1);
+    --color-next-3: hsla(0, 0%, 35%, 1);
+    --color-next-4: hsla(0, 0%, 30%, 1);
+    --color-next-5: hsla(0, 0%, 25%, 1);
+    --color-next-6: hsla(0, 0%, 20%, 1);
+    --color-next-7: hsla(0, 0%, 15%, 1);
+    --color-next-8: hsla(0, 0%, 10%, 1);
+    --color-next-9: hsla(0, 0%, 05%, 1);
+
+    --color-sat-1: hsla(var(--hue), calc(var(--saturation) * .9), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-2: hsla(var(--hue), calc(var(--saturation) * .8), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-3: hsla(var(--hue), calc(var(--saturation) * .7), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-4: hsla(var(--hue), calc(var(--saturation) * .6), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-5: hsla(var(--hue), calc(var(--saturation) * .5), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-6: hsla(var(--hue), calc(var(--saturation) * .4), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-7: hsla(var(--hue), calc(var(--saturation) * .3), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-8: hsla(var(--hue), calc(var(--saturation) * .2), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-sat-9: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
+    --color-neg-1: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.9), calc(var(--alpha) * 1));
+    --color-neg-2: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.8), calc(var(--alpha) * 1));
+    --color-neg-3: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.7), calc(var(--alpha) * 1));
+    --color-neg-4: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.6), calc(var(--alpha) * 1));
+    --color-neg-5: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.5), calc(var(--alpha) * 1));
+    --color-neg-6: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.4), calc(var(--alpha) * 1));
+    --color-neg-7: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.3), calc(var(--alpha) * 1));
+    --color-neg-8: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.2), calc(var(--alpha) * 1));
+    --color-neg-9: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1.1), calc(var(--alpha) * 1));
+    --color-pos-1: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .9), calc(var(--alpha) * 1));
+    --color-pos-2: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .8), calc(var(--alpha) * 1));
+    --color-pos-3: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .7), calc(var(--alpha) * 1));
+    --color-pos-4: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .6), calc(var(--alpha) * 1));
+    --color-pos-5: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .5), calc(var(--alpha) * 1));
+    --color-pos-6: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .4), calc(var(--alpha) * 1));
+    --color-pos-7: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .3), calc(var(--alpha) * 1));
+    --color-pos-8: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .2), calc(var(--alpha) * 1));
+    --color-pos-9: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * .1), calc(var(--alpha) * 1));
+    --color-alpha-1: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .1));
+    --color-alpha-2: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .2));
+    --color-alpha-3: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .3));
+    --color-alpha-4: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .4));
+    --color-alpha-5: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .5));
+    --color-alpha-6: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .6));
+    --color-alpha-7: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .7));
+    --color-alpha-8: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .8));
+    --color-alpha-9: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * .9));
+    
+    --color-light-1: hsla(var(--hue), calc(var(--saturation) * .55), calc(var(--lightness) * 1.1), calc(var(--alpha) * 1));
+    --color-light-2: hsla(var(--hue), calc(var(--saturation) * .60), calc(var(--lightness) * 1.2), calc(var(--alpha) * 1));
+    --color-light-3: hsla(var(--hue), calc(var(--saturation) * .65), calc(var(--lightness) * 1.3), calc(var(--alpha) * 1));
+    --color-light-4: hsla(var(--hue), calc(var(--saturation) * .70), calc(var(--lightness) * 1.4), calc(var(--alpha) * 1));
+    --color-light-5: hsla(var(--hue), calc(var(--saturation) * .75), calc(var(--lightness) * 1.5), calc(var(--alpha) * 1));
+    --color-light-6: hsla(var(--hue), calc(var(--saturation) * .80), calc(var(--lightness) * 1.6), calc(var(--alpha) * 1));
+    --color-light-7: hsla(var(--hue), calc(var(--saturation) * .85), calc(var(--lightness) * 1.7), calc(var(--alpha) * 1));
+    --color-light-8: hsla(var(--hue), calc(var(--saturation) * .90), calc(var(--lightness) * 1.8), calc(var(--alpha) * 1));
+    --color-light-9: hsla(var(--hue), calc(var(--saturation) * .95), calc(var(--lightness) * 1.9), calc(var(--alpha) * 1));
+    --color-dark-1: hsla(var(--hue), calc(var(--saturation) * .05), calc(var(--lightness) * .45), calc(var(--alpha) * 1));
+    --color-dark-2: hsla(var(--hue), calc(var(--saturation) * .10), calc(var(--lightness) * .40), calc(var(--alpha) * 1));
+    --color-dark-3: hsla(var(--hue), calc(var(--saturation) * .15), calc(var(--lightness) * .35), calc(var(--alpha) * 1));
+    --color-dark-4: hsla(var(--hue), calc(var(--saturation) * .20), calc(var(--lightness) * .30), calc(var(--alpha) * 1));
+    --color-dark-5: hsla(var(--hue), calc(var(--saturation) * .25), calc(var(--lightness) * .25), calc(var(--alpha) * 1));
+    --color-dark-6: hsla(var(--hue), calc(var(--saturation) * .30), calc(var(--lightness) * .20), calc(var(--alpha) * 1));
+    --color-dark-7: hsla(var(--hue), calc(var(--saturation) * .35), calc(var(--lightness) * .15), calc(var(--alpha) * 1));
+    --color-dark-8: hsla(var(--hue), calc(var(--saturation) * .40), calc(var(--lightness) * .10), calc(var(--alpha) * 1));
+    --color-dark-9: hsla(var(--hue), calc(var(--saturation) * .45), calc(var(--lightness) * .05), calc(var(--alpha) * 1));
+
+    --color-light-o-1: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.1 * var(--opacity)));
+    --color-light-o-2: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.2 * var(--opacity)));
+    --color-light-o-3: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.3 * var(--opacity)));
+    --color-light-o-4: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.4 * var(--opacity)));
+    --color-light-o-5: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.5 * var(--opacity)));
+    --color-light-o-6: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.6 * var(--opacity)));
+    --color-light-o-7: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.7 * var(--opacity)));
+    --color-light-o-8: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.8 * var(--opacity)));
+    --color-light-o-9: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.9 * var(--opacity)));
+    --color-dark-o-1: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.1 * var(--opacity)));
+    --color-dark-o-2: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.2 * var(--opacity)));
+    --color-dark-o-3: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.3 * var(--opacity)));
+    --color-dark-o-4: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.4 * var(--opacity)));
+    --color-dark-o-5: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.5 * var(--opacity)));
+    --color-dark-o-6: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.6 * var(--opacity)));
+    --color-dark-o-7: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.7 * var(--opacity)));
+    --color-dark-o-8: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.8 * var(--opacity)));
+    --color-dark-o-9: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.9 * var(--opacity)));
+}

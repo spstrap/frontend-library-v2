@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*
+** import
+*/
+@import "./setting/reset.css";
+@import "./setting/root.css";
+@import "./setting/global.css";
+@import "./element/color.css";
+@import "./element/grid.css";
+@import "./element/flex.css";
+@import "./element/button.css";
+@import "./element/animate.css";
+ 
+/*
+** library
+*/
+@import url("https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+[class^="ph-"], [class*=" ph-"] { align-self: center; }
+[class^="ph-"]:before, [class*=" ph-"]:before {
+    position: relative;
+    top: 0.05em;
+}
+
+/*
+** base
+**/
+html {
+    font-size: clamp(calc(var(--font-size) * var(--clamp-zoom) * 1.00), var(--clamp-ratio), calc(var(--font-size) * 1.00));
+}
+body, html {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    line-height: var(--line-height);
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+
+/*
+** link
+*/
+a:not([x-color]), a:not([x-color]):visited {
+    color: #999;
+}
+a:hover {
+    opacity: .8;
+}
+a:active,
+a:visited {
+    opacity: .6;
+}
+
+/* Scrollbar */
+* {
+    scrollbar-width: auto; /* Firefox */
+    scrollbar-color: rgba(255,255,255,0.1) var(--color-background);
+}
+*::-webkit-scrollbar {
+    width: var(--font-size); /* Chrome, Edge, and Safari */
+}
+*::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.05);
+    border-radius: var(--font-size);
+    border: calc(var(--font-size) * .3) solid var(--color-background);
+}

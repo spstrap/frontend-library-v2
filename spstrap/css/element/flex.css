@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 
+** 플랙스
+*/
+.x-flex {
+    display: flex;
+}
+.x-flex > [flex="0"] { flex: 0; }
+.x-flex > [flex="1"] { flex: 1; }
+.x-flex[grid="1"]  > .x-flex-col { flex-basis: 100.00%; }
+.x-flex[grid="2"]  > .x-flex-col { flex-basis: 50.000%; }
+.x-flex[grid="3"]  > .x-flex-col { flex-basis: 33.333%; }
+.x-flex[grid="4"]  > .x-flex-col { flex-basis: 25.000%; }
+.x-flex[grid="5"]  > .x-flex-col { flex-basis: 20.000%; }
+.x-flex[grid="6"]  > .x-flex-col { flex-basis: 16.666% }
+.x-flex[grid="7"]  > .x-flex-col { flex-basis: 14.285%; }
+.x-flex[grid="8"]  > .x-flex-col { flex-basis: 12.500%; }
+.x-flex[grid="9"]  > .x-flex-col { flex-basis: 11.111%; }
+.x-flex[grid="10"] > .x-flex-col { flex-basis: 10.000%; }
+.x-flex[grid*="res"] { flex-wrap: wrap; }
+.x-flex[grid$="fit"] > .x-flex-col { flex-grow: 1; }
+.x-flex[grid$="fill"] > .x-flex-col { flex-grow: 1; }
+.x-flex[grid^="1-res"]  > .x-flex-col { flex-basis: 100.00%; }
+.x-flex[grid^="2-res"]  > .x-flex-col { flex-basis: 50.000%; }
+.x-flex[grid^="3-res"]  > .x-flex-col { flex-basis: 33.333%; }
+.x-flex[grid^="4-res"]  > .x-flex-col { flex-basis: 25.000%; }
+.x-flex[grid^="5-res"]  > .x-flex-col { flex-basis: 20.000%; }
+.x-flex[grid^="6-res"]  > .x-flex-col { flex-basis: 16.666%; }
+.x-flex[grid^="7-res"]  > .x-flex-col { flex-basis: 14.285%; }
+.x-flex[grid^="8-res"]  > .x-flex-col { flex-basis: 12.500%; }
+.x-flex[grid^="9-res"]  > .x-flex-col { flex-basis: 11.111%; }
+.x-flex[grid^="10-res"] > .x-flex-col { flex-basis: 10.000%; }
+.x-flex[grid^="1-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 1), 100%); }
+.x-flex[grid^="2-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 2), 100%); }
+.x-flex[grid^="3-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 3), 100%); }
+.x-flex[grid^="4-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 4), 100%); }
+.x-flex[grid^="5-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 5), 100%); }
+.x-flex[grid^="6-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 6), 100%); }
+.x-flex[grid^="7-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 7), 100%); }
+.x-flex[grid^="8-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 8), 100%); }
+.x-flex[grid^="9-res"][grid$="fill"]  > .x-flex-col { min-width: min(calc(var(--pc-width) / 9), 100%); }
+.x-flex[grid^="10-res"][grid$="fill"] > .x-flex-col { min-width: min(calc(var(--pc-width) / 10), 100%); }
+
+.x-flex[sort*="h-stretch"] { justify-content: stretch; }
+.x-flex[sort*="h-start"] { justify-content: start; }
+.x-flex[sort*="h-center"] { justify-content: center; }
+.x-flex[sort*="h-end"] { justify-content: end; }
+.x-flex[sort*="h-between"] { justify-content: space-between; }
+.x-flex[sort*="h-around"] { justify-content: space-around; }
+.x-flex[sort*="h-evenly"] { justify-content: space-evenly; }
+.x-flex[sort*="v-stretch"] { align-items: stretch; }
+.x-flex[sort*="v-start"] { align-items: start; }
+.x-flex[sort*="v-center"] { align-items: center; }
+.x-flex[sort*="v-end"] { align-items: end; }
+.x-flex[sort*="v-between"] { align-content: space-between; }
+.x-flex[sort*="v-around"] { align-content: space-around; }
+.x-flex[sort*="v-evenly"] { align-content: space-evenly; }
+.x-flex[direction^="col"][sort*="v-between"] { justify-content: space-between; }
+.x-flex[direction^="col"][sort*="v-around"] { justify-content: space-around; }
+.x-flex[direction^="col"][sort*="v-evenly"] { justify-content: space-evenly; }
+.x-flex[direction^="col"] .x-flex-col[sort*="h-start"] { align-self: start; }
+.x-flex[direction^="col"] .x-flex-col[sort*="h-center"] { align-self: center; }
+.x-flex[direction^="col"] .x-flex-col[sort*="h-end"] { align-self: end; }
+.x-flex[direction="row"] { flex-direction: row; }
+.x-flex[direction="row-rvs"] { flex-direction: row-reverse; }
+.x-flex[direction="col"] { flex-direction: column; }
+.x-flex[direction="col-rvs"] { flex-direction: column-reverse; }
+.x-flex-col[sort*="h-start"] { justify-self: start; }
+.x-flex-col[sort*="h-center"] { justify-self: center; }
+.x-flex-col[sort*="h-end"] { justify-self: end; }
+.x-flex-col[sort*="v-start"] { align-self: start; }
+.x-flex-col[sort*="v-center"] { align-self: center; }
+.x-flex-col[sort*="v-end"] { align-self: end; }
