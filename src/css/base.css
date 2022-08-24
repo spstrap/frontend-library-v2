@@ -1,0 +1,65 @@
+.sp-html,
+.sp-body {
+    height: 100%;
+    overflow: hidden;
+}
+body.fullscreen .sp-temporary {
+    grid-template-columns: unset;
+}
+body.fullscreen .sp-temporary-element {
+    display: none;
+}
+
+/*
+** 코드 프리뷰
+*/
+.sp-code pre {
+    margin-top: .75rem;
+    padding-top: 2.5rem;
+    position: relative;
+    max-height: 10rem;
+    overflow: hidden;
+}
+.sp-code pre.show {
+    max-height: unset;
+}
+.sp-code pre::before {
+    content: attr(language);
+    position: absolute;
+    bottom: calc(100% - 2.5rem); left: 0;
+    color: #f03d4b;
+    font-size: .7rem;
+    padding: .4rem 1rem;
+    border-radius: .3rem .3rem 0 0;
+    text-transform: uppercase;
+}
+.sp-code pre::after {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: calc(100% - 2.5rem); background: linear-gradient(0deg, rgba(27,28,30,1) 0%, rgba(27,28,30,0) 100%);
+}
+.sp-code pre.show::after {
+    display: none;
+}
+.sp-code pre button {
+    z-index: 9;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    border: 0 !important; border-radius: .3rem;
+    width: 8rem; justify-content: center;
+    bottom: .5rem; left: 50%; margin-left: -4rem;
+    background-color: #13191a; color: #f03d4b;
+}
+.sp-code pre.show button {
+    color: #999; left: unset; right: .5rem;
+}
+.sp-code pre button::after {
+    content: 'OPEN CODE';
+    padding-left: .5rem;
+    font-size: .7rem;
+}
+.sp-code pre.show button::after {
+    content: 'CLOSE';
+}

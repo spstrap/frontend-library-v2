@@ -3,6 +3,3 @@
 .x-btn {
     display: inline-flex;
 }
-.x-btn:not([x-color*="#"]) {
-    color: var(--color-button-text);
-}

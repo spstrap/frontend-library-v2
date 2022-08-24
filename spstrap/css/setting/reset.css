@@ -51,7 +51,7 @@ table {
     border-spacing: 0;
 }
 a, button {
-    cursor: pointer;
+    cursor: pointer; color: inherit;
     outline: 0; text-decoration: none;
     background-color: unset; border: unset;
 }
@@ -63,6 +63,7 @@ textarea {
 }
 input, textarea, select {
     outline: 0;
+    max-width: 100%;
 }
 input[type="radio"] {
     background-color: initial;
@@ -84,4 +85,8 @@ button {
     margin: 0;
     border: 0;
     cursor: pointer;
+}
+hr {
+    border-width: 0;
+    border-bottom-width: 1px;
 }

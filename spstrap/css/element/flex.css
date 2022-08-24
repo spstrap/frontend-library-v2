@@ -66,6 +66,8 @@
 .x-flex[direction="row-rvs"] { flex-direction: row-reverse; }
 .x-flex[direction="col"] { flex-direction: column; }
 .x-flex[direction="col-rvs"] { flex-direction: column-reverse; }
+
+.x-flex-col { min-width: 0; }
 .x-flex-col[sort*="h-start"] { justify-self: start; }
 .x-flex-col[sort*="h-center"] { justify-self: center; }
 .x-flex-col[sort*="h-end"] { justify-self: end; }

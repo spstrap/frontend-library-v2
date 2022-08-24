@@ -4,71 +4,83 @@
     require $var['root'].'/inc/layout/header.html';
 ?>
 
-<style>
-.sp-html,
-.sp-body {
-    height: 100%;
-    overflow: hidden;
-}
-body.fullscreen .sp-temporary {
-    grid-template-columns: unset;
-}
-body.fullscreen .sp-temporary-element{
-    display: none;
-}
-</style>
-
 <!-- container -->
 <div class="sp-temporary x-grid" split="h-min-auto-min" x-size="h100">
-    <div class="sp-temporary-element x-grid-col" x-size="wr15">
+    <div class="sp-temporary-element x-grid-col" x-size="wr25">
 
-        <!-- container -->
-        <div class="x-grid" split="v-min-auto-min" x-size="h100">
-            <div class="x-grid-col">
-                <a href="/" class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="xs" x-color="#sat-1" x-size="w100">
-                    <i class="ph-bandaids"></i>
-                    SPSTRAP
-                </a>
-            </div>
-            <div class="x-grid-col">
+        <div class="x-grid" grid="2" x-size="h100">
+
+            <div class="x-grid-column">
 
                 <!-- container -->
-                <div class="x-flex" direction="col" x-gap="xs" x-tpd="2xl">
-                    <h5>CSS</h5>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">grid</a></div>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">flex</a></div>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">box</a></div>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">font</a></div>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">color</a></div>
-                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">button</a></div>
-                    <div class="x-flex-col">
-                        <a href="#!" class="x-btn" x-size="w100">button</a>
+                <div class="x-grid" split="v-min-auto-min" x-size="h100">
+                    <div class="x-grid-col">
+                        <a href="/" class="x-btn" x-fs="lg" x-pd="2xl" x-radius="xs" x-color="#sat-1" x-size="w100">
+                            <i class="ph-bandaids"></i>
+                            SPSTRAP
+                        </a>
+                    </div>
+                    <div class="x-grid-col">
+
                         <!-- container -->
-                        <div class="x-flex" direction="col" x-gap="xs" x-tpd="md">
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 1</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 2</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 3</a></div>
+                        <div class="x-flex" direction="col" x-gap="xs" x-tpd="2xl">
+                            <h5>CSS</h5>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">grid</a></div>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">flex</a></div>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">box</a></div>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">font</a></div>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">color</a></div>
+                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">button</a></div>
+                            <div class="x-flex-col">
+                                <a href="#!" class="x-btn" x-size="w100">button</a>
+                                <!-- container -->
+                                <div class="x-flex" direction="col" x-gap="xs" x-tpd="md">
+                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 1</a></div>
+                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 2</a></div>
+                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 3</a></div>
+                                </div><!-- // -->
+                            </div>
                         </div><!-- // -->
+
+                    </div>
+                    <div class="x-grid-col">
+                        <div x-tpd="2xl" x-break="all">
+                            <p x-fs="sm">
+                                © 2021 — SPSTRAP License / dev.spstrap@gmail.com
+                            </p>
+                            <hr x-color="|light-o-9" x-mg="md-y" />
+                            <hr x-color="|dark-o-9" x-mg="md-y" />
+                            <p x-fs="2xs" x-color="#next-3">
+                                SPSTRAP. COPYRIGHT(C) 2021 Spstrap LTD. ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
                     </div>
                 </div><!-- // -->
 
             </div>
-            <div class="x-grid-col">
-                <div x-tpd="2xl" x-break="all">
-                    <p x-fs="sm">
-                        © 2021 — SPSTRAP License / dev.spstrap@gmail.com
-                    </p>
-                    <p x-fs="2xs" x-color="#next-3">
-                        SPSTRAP. COPYRIGHT(C) 2021 Spstrap LTD. ALL RIGHTS RESERVED.
-                    </p>
-                </div>
-            </div>
-        </div><!-- // -->
+            <div class="sp-aside-submenu x-grid-column"></div>
+
+        </div>
 
     </div>
     <div class="x-grid-col" x-scroll="y">
 
         <div style="padding:5rem;height:200vh">
+
+
+
+                    <!-- /// -->
+                    <div class="sp-code" data-hljs="html">
+                        <h4>케케케</h4>
+                        <textarea class="sp-code-preview">
+                            <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="sat-1#prev-0"><strong>sat-1#prev-0</strong></button>
+                            <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="sat-1#next-9"><strong>sat-1#next-9</strong></button>
+                        </textarea>
+                    </div><!-- // -->
+
+
+
+
             <p x-fs="3xs">123abd가나다</p>
             <p x-fs="2xs">123abd가나다</p>
             <p x-fs="xs">123abd가나다</p>
@@ -84,7 +96,7 @@ body.fullscreen .sp-temporary-element{
             <p x-fs="7xl">123abd가나다</p>
             <p x-fs="8xl">123abd가나다</p>
             <p x-fs="9xl">123abd가나다</p>
-            <hr />
+            <hr x-color="|sat-1" x-mg="xl-y" />
             <h1>123abd가나다</h1>
             <h2>123abd가나다</h2>
             <h3>123abd가나다</h3>
@@ -92,169 +104,68 @@ body.fullscreen .sp-temporary-element{
             <h5>123abd가나다</h5>
             <h6>123abd가나다</h6>
             <p x-pd="3xl">
-                <button class="x-btn" x-pd="3xl" x-radius="xs" x-color="sat-1|wht" x-line="3xs"><strong>sat-1</strong></button>
-                <button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="sat-1|wht" x-line="3xs"><strong>sat-1</strong></button>
+                <button class="x-btn" x-pd="3xl" x-radius="xs" x-color="sat-1#prev-1|prev-1" x-line="3xs"><strong>sat-1</strong></button>
+                <button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="sat-1#next-1|next-1" x-line="3xs"><strong>sat-1</strong></button>
             </p>
             <p x-pd="3xl" x-mg="3xl" x-color="|sat-1" x-line="3xs"><button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="|sat-1" x-line="3xs"><strong>sat-1</strong></button></p>
+            <p x-pd="3xl">
+                <button class="x-btn" x-pd="3xl" x-radius="xs" x-color="prev-1" x-line="3xs"><strong>sat-1</strong></button>
+                <button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="next-1" x-line="3xs"><strong>sat-1</strong></button>
+            </p>
         </div>
 
     </div>
-    <div class="x-grid-col" x-scroll="y" x-size="wr15">
+    <div class="sp-temporary-element x-grid-col" x-scroll="y" x-size="wr15">
 
-        ss
+        <div x-fs="xs" x-pd="lg">
+            <h6 x-color="#sat-1">CSS CODE</h6>
+            <hr x-color="|light-o-5" x-mg="sm-y" />
+            <div class="x-grid" split="h-min-auto" x-gap="2xs">
+                <div class="x-grid-col" sort="v-center" x-size="wr05">
+                    메인 컬러
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <span class="pickr-container" data-variable="primary"></span>
+                </div>
+                <div class="x-grid-col" sort="v-center">
+                    폰트색
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <span class="pickr-container" data-variable="--color-text"></span>
+                </div>
+                <div class="x-grid-col" sort="v-center">
+                    배경색
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <span class="pickr-container" data-variable="--color-background"></span>
+                </div>
+                <div class="x-grid-col" sort="v-center">
+                    가장 밝은색
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <span class="pickr-container" data-variable="--color-white"></span>
+                </div>
+                <div class="x-grid-col" sort="v-center">
+                    가장 어두운색
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <span class="pickr-container" data-variable="--color-black"></span>
+                </div>
+                <div class="x-grid-col" sort="v-center">
+                    투명도 반전
+                </div>
+                <div class="x-grid-col" sort="v-center" x-talign="end">
+                    <input type="range" class="pickr-range" min="-100" max="100" step="1" data-variable="--reverse" data-tails="%" />
+                </div>
+            </div>
+            <br />
+            <h6 x-color="#sat-1">CSS CODE</h6>
+            <hr x-color="|light-o-5" x-mg="sm-y" />
+            <textarea class="sp-variable-data" x-fs="2xs" x-color="prev-0#next-9|next-9" x-size="w100-hr10" x-pd="md"></textarea>
+        </div>
 
     </div>
 </div><!-- // -->
-
-<style>
-[x-scroll*="y"] {
-    overflow-y: auto;
-}
-</style>
-
-
-
-
-
-
-<!--
-<style>
-.sp-html,
-.sp-body {
-    height: 100%;
-    overflow: hidden;
-}
-.sp-layout {
-    display: grid;
-    height: 100%; max-height: 100%;
-    grid-template-columns: 200px 200px 1fr 200px;
-}
-.sp-logo {
-    
-}
-.sp-aside,
-.sp-subside,
-.sp-contents,
-.sp-control {
-    overflow-y: auto;
-    max-height: 100%;
-    position: relative;
-}
-.sp-folder {
-    overflow-y: auto;
-}
-.sp-folder ul {
-}
-.sp-folder ul > p {
-    color: #ff3300;
-    display: inline-flex;
-    align-items: center;
-    padding: .2rem 2rem;
-}
-.sp-folder ul + ul {
-    margin-top: 1rem;
-}
-.sp-folder ul li {
-    
-}
-.sp-folder ul li a {
-    display: block;
-    padding: .2rem 2rem;
-}
-.sp-folder ul ul li a {
-    font-size: .9rem;
-}
-
-body.fullscreen .sp-logo,
-body.fullscreen .sp-header,
-body.fullscreen .sp-aside,
-body.fullscreen .sp-subside,
-body.fullscreen .sp-control,
-body.fullscreen .sp-footer {
-    display: none;
-}
-body.fullscreen .sp-contents {
-    grid-column: 1 / 5;
-}
-
-.sp-copyright {
-    font-size: .8rem;
-    display: flex; align-items: end;
-    justify-content: space-between;
-}
-.sp-logo a {
-    display: flex;
-    align-items: center;
-    color: #ff3300;
-    font-weight: bold;
-}
-.sp-aside {
-    display: grid; height: 100%;
-    grid-template-rows: auto 1fr auto;
-}
-</style>
-
-!-- layout --
-<div class="sp-layout">
-    <div class="sp-aside">
-        <div class="sp-logo">
-            <a href="/" class="x-btn" x-pd="xl">
-                <i class="ph-bandaids"></i>
-                SPSTRAP
-            </a>
-        </div>
-        <div class="sp-folder">
-            <ul>
-                <p><i class="ph-file-css"></i>CSS</p>
-                <li><a class="x-btn" x-pd="xl" href="#!">grid</a></li>
-                <li><a class="x-btn" x-pd="xl" href="#!">flex</a></li>
-                <li><a class="x-btn" x-pd="xl" href="#!">box</a></li>
-                <li><a class="x-btn" x-pd="xl" href="#!">font</a></li>
-                <li><a class="x-btn" x-pd="xl" href="#!">color</a></li>
-                <li><a class="x-btn" x-pd="xl" href="#!">button</a></li>
-                <li>
-                    <a href="#!">sub</a>
-                    <ul>
-                        <li><a class="x-btn" x-pd="xl" href="#!">sub 1</a></li>
-                        <li><a class="x-btn" x-pd="xl" href="#!">sub 2</a></li>
-                        <li><a class="x-btn" x-pd="xl" href="#!">sub 3</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul>
-                <p><i class="ph-file-js"></i>SCRIPT</p>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-            </ul>
-            <ul>
-                <p><i class="ph-git-branch"></i>LIBRARY</p>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-            </ul>
-            <ul>
-                <p><i class="ph-file-html"></i>TEMPLATE</p>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-                <li><a href="#!" class="x-btn" x-pd="xl">#</a></li>
-            </ul>
-            <p style="height:200vh"></p>
-        </div>
-        <div class="sp-copyright x-btn" x-pd="xl" x-break="all">
-            <p>
-                © 2021 — SPSTRAP License / dev.spstrap@gmail.com<br />
-                <small>SPSTRAP. COPYRIGHT(C) 2021 Spstrap LTD. ALL RIGHTS RESERVED.</small>
-            </p>
-        </div>
-    </div>
-    <div class="sp-subside">
-        <p style="height:200vh">sp-subside</p>
-    </div>
-    <div class="sp-contents">
-        <p style="height:200vh">sp-contents</p>
-    </div>
-    <div class="sp-control">
-        <p style="height:200vh">sp-control</p>
-    </div>
-</div>--><!-- // -->
 
 <?php
     require $var['root'].'/inc/layout/footer.html';

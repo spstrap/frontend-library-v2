@@ -4,6 +4,29 @@
 
     --color-primary: hsla(var(--hue), calc(var(--saturation) * 1), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
 
+    --color-prev-0: hsla(0, 0%, calc((var(--reverse) * 1) - 00%), 1);
+    --color-prev-1: hsla(0, 0%, calc((var(--reverse) * 1) - 05%), 1);
+    --color-prev-2: hsla(0, 0%, calc((var(--reverse) * 1) - 10%), 1);
+    --color-prev-3: hsla(0, 0%, calc((var(--reverse) * 1) - 15%), 1);
+    --color-prev-4: hsla(0, 0%, calc((var(--reverse) * 1) - 20%), 1);
+    --color-prev-5: hsla(0, 0%, calc((var(--reverse) * 1) - 25%), 1);
+    --color-prev-6: hsla(0, 0%, calc((var(--reverse) * 1) - 30%), 1);
+    --color-prev-7: hsla(0, 0%, calc((var(--reverse) * 1) - 35%), 1);
+    --color-prev-8: hsla(0, 0%, calc((var(--reverse) * 1) - 40%), 1);
+    --color-prev-9: hsla(0, 0%, calc((var(--reverse) * 1) - 45%), 1);
+
+    --color-next-0: hsla(0, 0%, calc((var(--reverse) * -1) + 55%), 1);
+    --color-next-1: hsla(0, 0%, calc((var(--reverse) * -1) + 60%), 1);
+    --color-next-2: hsla(0, 0%, calc((var(--reverse) * -1) + 65%), 1);
+    --color-next-3: hsla(0, 0%, calc((var(--reverse) * -1) + 70%), 1);
+    --color-next-4: hsla(0, 0%, calc((var(--reverse) * -1) + 75%), 1);
+    --color-next-5: hsla(0, 0%, calc((var(--reverse) * -1) + 80%), 1);
+    --color-next-6: hsla(0, 0%, calc((var(--reverse) * -1) + 85%), 1);
+    --color-next-7: hsla(0, 0%, calc((var(--reverse) * -1) + 90%), 1);
+    --color-next-8: hsla(0, 0%, calc((var(--reverse) * -1) + 95%), 1);
+    --color-next-9: hsla(0, 0%, calc((var(--reverse) * -1) + 100%), 1);
+
+    /*
     --color-prev-1: hsla(0, 0%, 95%, 1);
     --color-prev-2: hsla(0, 0%, 90%, 1);
     --color-prev-3: hsla(0, 0%, 85%, 1);
@@ -23,7 +46,7 @@
     --color-next-7: hsla(0, 0%, 15%, 1);
     --color-next-8: hsla(0, 0%, 10%, 1);
     --color-next-9: hsla(0, 0%, 05%, 1);
-
+*/
     --color-sat-1: hsla(var(--hue), calc(var(--saturation) * .9), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
     --color-sat-2: hsla(var(--hue), calc(var(--saturation) * .8), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
     --color-sat-3: hsla(var(--hue), calc(var(--saturation) * .7), calc(var(--lightness) * 1), calc(var(--alpha) * 1));
@@ -80,22 +103,22 @@
     --color-dark-8: hsla(var(--hue), calc(var(--saturation) * .40), calc(var(--lightness) * .10), calc(var(--alpha) * 1));
     --color-dark-9: hsla(var(--hue), calc(var(--saturation) * .45), calc(var(--lightness) * .05), calc(var(--alpha) * 1));
 
-    --color-light-o-1: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.1 * var(--opacity)));
-    --color-light-o-2: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.2 * var(--opacity)));
-    --color-light-o-3: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.3 * var(--opacity)));
-    --color-light-o-4: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.4 * var(--opacity)));
-    --color-light-o-5: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.5 * var(--opacity)));
-    --color-light-o-6: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.6 * var(--opacity)));
-    --color-light-o-7: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.7 * var(--opacity)));
-    --color-light-o-8: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.8 * var(--opacity)));
-    --color-light-o-9: hsla(var(--hue), calc(var(--saturation) * .1), 100%, calc(0.9 * var(--opacity)));
-    --color-dark-o-1: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.1 * var(--opacity)));
-    --color-dark-o-2: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.2 * var(--opacity)));
-    --color-dark-o-3: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.3 * var(--opacity)));
-    --color-dark-o-4: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.4 * var(--opacity)));
-    --color-dark-o-5: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.5 * var(--opacity)));
-    --color-dark-o-6: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.6 * var(--opacity)));
-    --color-dark-o-7: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.7 * var(--opacity)));
-    --color-dark-o-8: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.8 * var(--opacity)));
-    --color-dark-o-9: hsla(var(--hue), calc(var(--saturation) * .1), 0%, calc(0.9 * var(--opacity)));
+    --color-light-o-1: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.1 * var(--opacity)));
+    --color-light-o-2: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.2 * var(--opacity)));
+    --color-light-o-3: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.3 * var(--opacity)));
+    --color-light-o-4: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.4 * var(--opacity)));
+    --color-light-o-5: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.5 * var(--opacity)));
+    --color-light-o-6: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.6 * var(--opacity)));
+    --color-light-o-7: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.7 * var(--opacity)));
+    --color-light-o-8: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.8 * var(--opacity)));
+    --color-light-o-9: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * 1), calc(0.9 * var(--opacity)));
+    --color-dark-o-1: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.1 * var(--opacity)));
+    --color-dark-o-2: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.2 * var(--opacity)));
+    --color-dark-o-3: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.3 * var(--opacity)));
+    --color-dark-o-4: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.4 * var(--opacity)));
+    --color-dark-o-5: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.5 * var(--opacity)));
+    --color-dark-o-6: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.6 * var(--opacity)));
+    --color-dark-o-7: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.7 * var(--opacity)));
+    --color-dark-o-8: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.8 * var(--opacity)));
+    --color-dark-o-9: hsla(var(--hue), calc(var(--saturation) * .1), calc(var(--reverse) * -1), calc(0.9 * var(--opacity)));
 }

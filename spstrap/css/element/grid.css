@@ -48,6 +48,7 @@
 .x-grid[split="v-min-auto"] { grid-template-rows: max-content auto; }
 .x-grid[split="v-auto-min"] { grid-template-rows: auto max-content; }
 .x-grid[split="v-min-auto-min"] { grid-template-rows: max-content auto max-content; }
+.x-grid-col { min-width: 0; }
 .x-grid-col[sort*="h-start"] { justify-self: start; }
 .x-grid-col[sort*="h-center"] { justify-self: center; }
 .x-grid-col[sort*="h-end"] { justify-self: end; }
