@@ -19,6 +19,7 @@ export default class SP_PICKR {
         _.custom = 'sp-pickr';
         _.container = '.pickr-container';
         _.primary = ['--hue', '--saturation', '--lightness', '--alpha'];
+        _.scrollbar = ['--scrollbar-hue', '--scrollbar-saturation', '--scrollbar-lightness', '--scrollbar-alpha'];
         _.texearea = '.sp-variable-data';
         _.range = '.pickr-range';
 
@@ -40,10 +41,20 @@ export default class SP_PICKR {
             --lightness: ${root.getPropertyValue(_.primary[2]).trim()};
             --alpha: ${root.getPropertyValue(_.primary[3]).trim()};
             --color-text: ${root.getPropertyValue('--color-text').trim()};
+            --color-link: ${root.getPropertyValue('--color-link').trim()};
             --color-background: ${root.getPropertyValue('--color-background').trim()};
             --color-white: ${root.getPropertyValue('--color-white').trim()};
             --color-black: ${root.getPropertyValue('--color-black').trim()};
             --reverse: ${root.getPropertyValue('--reverse').trim()};
+            --scrollbar-hue: ${root.getPropertyValue(_.scrollbar[0]).trim()};
+            --scrollbar-saturation: ${root.getPropertyValue(_.scrollbar[1]).trim()};
+            --scrollbar-lightness: ${root.getPropertyValue(_.scrollbar[2]).trim()};
+            --scrollbar-alpha: ${root.getPropertyValue(_.scrollbar[3]).trim()};
+            --button-front: ${root.getPropertyValue('--button-front').trim()};
+            --button-back: ${root.getPropertyValue('--button-back').trim()};
+            --gap: ${root.getPropertyValue('--gap').trim()};
+            --ratio: ${root.getPropertyValue('--ratio').trim()};
+            --opacity: ${root.getPropertyValue('--opacity').trim()};
         `;
         variable = variable.replaceAll('            ', '').trim();
         textarea.value = variable;
@@ -61,10 +72,11 @@ export default class SP_PICKR {
         container.forEach( element => {
 
             variable = element.dataset.variable;
-            element.value = root.getPropertyValue(variable).replaceAll('%', '').trim();
+            element.value = root.getPropertyValue(variable).replaceAll(/[^-\.0-9]/g, '').trim();
             element.addEventListener('input', function(){
-                value = this.value.replaceAll('%', '').trim();
-                tails = this.dataset.tails;
+                variable = this.dataset.variable;
+                value = this.value.replaceAll(/[^-\.0-9]/g, '').trim();
+                tails = this.dataset.tails || '';
                 document.documentElement.style.setProperty(variable, value + tails);
                 _.setBaseColor();
             });
@@ -91,6 +103,12 @@ export default class SP_PICKR {
                 hsla['s'] = root.getPropertyValue(_.primary[1]).trim();
                 hsla['l'] = root.getPropertyValue(_.primary[2]).trim();
                 hsla['a'] = root.getPropertyValue(_.primary[3]).trim();
+                color = `hsla(${hsla['h']}, ${hsla['s']}, ${hsla['l']}, ${hsla['a']})`;
+            } else if (variable === 'scrollbar') {
+                hsla['h'] = root.getPropertyValue(_.scrollbar[0]).trim();
+                hsla['s'] = root.getPropertyValue(_.scrollbar[1]).trim();
+                hsla['l'] = root.getPropertyValue(_.scrollbar[2]).trim();
+                hsla['a'] = root.getPropertyValue(_.scrollbar[3]).trim();
                 color = `hsla(${hsla['h']}, ${hsla['s']}, ${hsla['l']}, ${hsla['a']})`;
             }
 
@@ -148,22 +166,25 @@ export default class SP_PICKR {
                 //console.log('Event: "change"', color, source, instance);
                 //console.log( color.toHEXA().toString(3) )
                 if (instance.options.variable === 'primary') {
-                    console.log(color.toHSLA()[0])
-                    console.log(color.toHSLA()[1])
-                    console.log(color.toHSLA()[2])
-                    console.log(color.toHSLA()[3])
                     document.documentElement.style.setProperty(_.primary[0], color.toHSLA()[0]);
                     document.documentElement.style.setProperty(_.primary[1], color.toHSLA()[1] +'%');
                     document.documentElement.style.setProperty(_.primary[2], color.toHSLA()[2] +'%');
                     document.documentElement.style.setProperty(_.primary[3], color.toHSLA()[3]);
+                } else if (instance.options.variable === 'scrollbar') {
+                    document.documentElement.style.setProperty(_.scrollbar[0], color.toHSLA()[0]);
+                    document.documentElement.style.setProperty(_.scrollbar[1], color.toHSLA()[1] +'%');
+                    document.documentElement.style.setProperty(_.scrollbar[2], color.toHSLA()[2] +'%');
+                    document.documentElement.style.setProperty(_.scrollbar[3], color.toHSLA()[3]);
                 } else {
                     document.documentElement.style.setProperty(instance.options.variable, color.toHEXA().toString(3));
                 }
 
+            }).on('changestop', (source, instance) => {
+
+                ///console.log('Event: "changestop"', source, instance);
+                instance.applyColor(true);
                 _.setBaseColor();
 
-            }).on('changestop', (source, instance) => {
-                ///console.log('Event: "changestop"', source, instance);
             }).on('cancel', instance => {
                 //console.log('Event: "cancel"', instance);
             }).on('swatchselect', (color, instance) => {

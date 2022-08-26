@@ -306,8 +306,8 @@ export default class SP_HIGHLIGHT {
         });
 
         // 메뉴 만들기
-        let nav, sublink, submenu = document.querySelector('.sp-aside-submenu');
-        if (submenu) document.querySelectorAll(`.sp-code h4`).forEach( (section, i) => {
+        let nav, sublink, submenu = document.querySelector('.sp-code-submenu');
+        if (submenu) document.querySelectorAll(`.sp-code-title`).forEach( (section, i) => {
             
             nav = `<a name="sub-${i}"></a>`;
             sublink = `<a href="#sub-${i}">${section.innerHTML}</a>`;

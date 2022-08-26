@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .sp-html,
 .sp-body {
     height: 100%;
@@ -11,14 +13,25 @@ body.fullscreen .sp-temporary-element {
 }
 
 /*
+** 레이아웃
+*/
+.sp-contents {
+    padding: 0 2.1rem 2.1rem 2.1rem;
+}
+
+/*
 ** 코드 프리뷰
 */
+.sp-code {
+    margin-top: 1.5rem;
+}
 .sp-code pre {
     margin-top: .75rem;
     padding-top: 2.5rem;
     position: relative;
-    max-height: 10rem;
+    max-height: 13.5rem;
     overflow: hidden;
+    border-radius: .3rem;
 }
 .sp-code pre.show {
     max-height: unset;
@@ -62,4 +75,32 @@ body.fullscreen .sp-temporary-element {
 }
 .sp-code pre.show button::after {
     content: 'CLOSE';
+}
+.sp-code textarea {
+    display: none;
+}
+.sp-code a[name] {
+    position: relative; top: -1.6rem;
+}
+.sp-code-submenu {
+    padding: clamp(calc(var(--gap) * var(--zoom-2xl) * var(--clamp-zoom)), var(--clamp-ratio), calc(var(--gap) * var(--zoom-2xl)));
+}
+.sp-code-submenu:not(:empty)::before {
+    content: 'NAVIGATION';
+    display: block; color: var(--color-neg-7);
+    padding-bottom: 2.1rem;
+}
+.sp-code-submenu a {
+    display: block;
+}
+.sp-code-title { font-size: 1.5rem; font-weight: bold; }
+.sp-code-alert { padding: 1.5rem 1rem; }
+
+/*
+** 코드 테이블
+*/
+.sp-code-table td {
+    padding: 1rem;
+    border: 1px solid var(--color-light-o-2);
+
 }

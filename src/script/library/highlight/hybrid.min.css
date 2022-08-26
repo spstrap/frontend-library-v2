@@ -260,4 +260,4 @@
 .hljs .hljs-ln-n { color: #444; }
 .hljs,
 .sp-code pre::before { background: #1e1f21 !important; }
-.sp-code pre code.hljs { padding: 1.6rem 1.5rem 1.5rem 1.5rem; }
+.sp-code pre code.hljs { padding: 1.6rem 1.5rem 1.5rem 1.5rem; border-radius: 0 .3rem .3rem .3rem; }

@@ -83,7 +83,7 @@ label:not(.displaynone):not([style*="display:none"]):not([style*="display: none"
 button {
     padding: 0;
     margin: 0;
-    border: 0;
+    border: 1px solid transparent;
     cursor: pointer;
 }
 hr {

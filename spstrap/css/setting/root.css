@@ -1,8 +1,40 @@
 @charset "UTF-8";
 
 :root {
+
+    /* 
+        hsla
+        (hue : 색상 (= 색조 = 색깔) 1 ~ 360, 
+        saturation : 채도 (= 컬러 정도) 1 ~ 100%, 
+        lightness : 명도 (= 밝기) 1 ~ 100%, 
+        alpha : 투명도 0.00 ~ 1
+        --------------------------------------------------------------------------------------------
+    */
+    --hue: 283.931;
+    --saturation: 37.4722%;
+    --lightness: 34.1244%;
+    --alpha: 1;
+    --color-text: #767676;
+    --color-link: #979797;
+    --color-background: #212121;
+    --color-white: #fff;
+    --color-black: #111;
+    --reverse: 100%;
+    --scrollbar-hue: 283.931;
+    --scrollbar-saturation: 0%;
+    --scrollbar-lightness: 32.6294%;
+    --scrollbar-alpha: 0.3;
+    --button-front: #fff;
+    --button-back: #A96AC1;
+    --gap: 1rem;
+    --ratio: 0.6;
+    --opacity: 0.3;
+    /*
+    ** ---------------------------------------------------------------------------------------------
+    */
+
     --font-size: 16px;                          /* 폰트 베이스 */
-    --line-height: 1.4;                         /* 폰트 행간 */
+    --line-height: 1.5;                         /* 폰트 행간 */
     
     --pc-width: 1536px;                         /* 피씨 기본 사이즈 1536px */
     --mobile-width: 500px;                      /* 모바일 기본 사이즈 */
@@ -15,31 +47,10 @@
     --zoom-xs: .5;
     --zoom-sm: .75;
     --zoom-md: 1;
-    --zoom-lg: 1.5;
-    --zoom-xl: 2;
-    --zoom-2xl: 2.5;
-    --zoom-3xl: 3;
-
-    --gap: 1rem;                                /* 모든 요소의 기본 여백 */
-    --ratio: .6;                                /* 텍스트 박스의 내부 여백 */
-    --opacity: .3;                              /* 투명도 배율 */
-
-    /* 
-        hsla
-        (hue : 색상 (= 색조 = 색깔) 1 ~ 360, 
-        saturation : 채도 (= 컬러 정도) 1 ~ 100%, 
-        lightness : 명도 (= 밝기) 1 ~ 100%, 
-        alpha : 투명도 0.00 ~ 1
-    */
-    --hue: 360;
-    --saturation: 50%;
-    --lightness: 50%;
-    --alpha: 1;
-    --color-text: #999;
-    --color-background: #222;
-    --color-white: #fff;
-    --color-black: #111;
-    --reverse: 100%;
+    --zoom-lg: 1.25;
+    --zoom-xl: 1.5;
+    --zoom-2xl: 1.75;
+    --zoom-3xl: 2;
 
     /*
     ** 애니메이션
