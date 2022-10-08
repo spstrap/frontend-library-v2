@@ -55,6 +55,8 @@ export default class SP_PICKR {
             --gap: ${root.getPropertyValue('--gap').trim()};
             --ratio: ${root.getPropertyValue('--ratio').trim()};
             --opacity: ${root.getPropertyValue('--opacity').trim()};
+
+            --font-size: ${root.getPropertyValue('--font-size').trim()};
         `;
         variable = variable.replaceAll('            ', '').trim();
         textarea.value = variable;

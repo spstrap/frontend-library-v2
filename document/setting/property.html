@@ -1,0 +1,45 @@
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/meta.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/header.html';
+?>
+
+<nav line="0-b">
+    <div class="flex" w="100" h="100" grid="1" sort="v-center">
+        <div class="flex-col" pd="3-t">
+            <h2 class="flex" pd="t6" font="2" gap="5" sort="v-center">
+                Setting
+                <i class="ph-arrow-right" font="1"></i>
+                Property
+            </h2>
+        </div>
+        <div class="flex-col">
+            <h1 pd="t6" unpd="t">전역 프로퍼티</h1>
+        </div>
+        <div class="flex-col">
+            <p pd="t6" font="3" unpd="t">
+                스타일시트의 전역 속성을 정의합니다. 폰트 크기, 색상, 배율 등 다양한 속성들이 관리됩니다.<br />
+                특히 반응형 코드에 대한 설정들도 포함하고 있기 때문에 수정시 <code>variable</code> 용도를 이해할 필요가 있습니다.
+            </p>
+        </div>
+    </div>
+</nav>
+<article pd="t6">
+    
+    <!-- 프로퍼티 -->
+    <div class="sp-code" data-hljs="css" preview="false">
+        <h3 font="1" pd="2-y">./css/settings/<code highlight="8">property.css</code></h3>
+        <div class="flex" line="0-b" pd="5-b" mg="5-b">
+            <h2>프로퍼티</h2>
+        </div>
+        <textarea class="sp-code-preview">
+            <?php
+                require $_SERVER["DOCUMENT_ROOT"].'/spstrap/css/settings/property.css';
+            ?>
+        </textarea>
+    </div><!-- // -->
+
+</article>
+
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/footer.html';
+?>

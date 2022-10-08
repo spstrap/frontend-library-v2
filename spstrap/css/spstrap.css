@@ -3,27 +3,23 @@
 /*
 ** import
 */
-@import "./setting/reset.css";
-@import "./setting/root.css";
-@import "./setting/global.css";
-@import "./setting/base.css";
-@import "./element/color.css";
-@import "./element/grid.css";
-@import "./element/flex.css";
+/* settings */
+@import "./settings/reset.css";
+@import "./settings/base.css";
+@import "./settings/property.css";
+/* element */
 @import "./element/button.css";
-@import "./element/animate.css";
- 
+
 /*
 ** icon library
 */
 @import url("https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css");
-[class^="ph-"], [class*=" ph-"] { align-self: center; }
-[class^="ph-"]:before, [class*=" ph-"]:before {
-    position: relative;
-    top: 0.05em;
-}
 
 /*
 ** font library
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap');
+
+input {
+    accent-color: #f8a100;
+}

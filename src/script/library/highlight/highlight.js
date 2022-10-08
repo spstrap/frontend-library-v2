@@ -21,7 +21,7 @@ export default class SP_HIGHLIGHT {
 
         const _ = this;
 
-        _.codeHighlight()
+        _.codeHighlight();
 
         /*
         * load css after init ( promiss )
@@ -180,7 +180,7 @@ export default class SP_HIGHLIGHT {
     * < is replaced with &lt;
     * > is replaced with &gt;
     */
-    getCode(string) {
+    getCode(string, language) {
 
         const _ = this;
 
@@ -200,11 +200,13 @@ export default class SP_HIGHLIGHT {
         regex = /trickarea/ig;
         code = _.trim(code.toString().replace(regex, 'textarea'));
 
-        regex = /(\[)(?!ignoretext)(.*?)(\])/ig;
-        found = code.match(regex) || [] ;
-        for (i=0; i < found.length; i++) {
-            endcode = _.trim(found[i].replace(/(\[|\])|(=\"\")/gi,''));
-            code = code.toString().replace(found[i], '<i>'+ endcode +'</i>');
+        if (language === 'html') {
+            regex = /(\[)(?!ignoretext)(.*?)(\])/ig;
+            found = code.match(regex) || [] ;
+            for (i=0; i < found.length; i++) {
+                endcode = _.trim(found[i].replace(/(\[|\])|(=\"\")/gi,''));
+                code = code.toString().replace(found[i], '<i>'+ endcode +'</i>');
+            }
         }
 
         return code;
@@ -237,7 +239,10 @@ export default class SP_HIGHLIGHT {
 
             if (content) {
 
-                origin = container.innerHTML.replace(/\[|\]/gi,'');
+                origin = container.innerHTML;
+                origin = origin.replace(/\[|\]/gi,'');
+                origin = origin.replace(/(&lt;script(.*?)&lt;\/script&gt;)/, '');
+                origin = origin.replace(/(&lt;link rel(.*?)&gt;)/, '');
                 origin = origin.replace(/textarea/gi, 'div');
                 origin = origin.replace(/trickarea/gi, 'textarea');
 
@@ -283,37 +288,73 @@ export default class SP_HIGHLIGHT {
 
                 _.after(preview, element);
 
+                setTimeout(() => {
+                    container.setAttribute('ready', 'true');    
+                }, 100);
+
             }
             
         });
 
         // 코드 배열
-        document.querySelectorAll(`code`).forEach( code => {
-            
-            code.innerHTML = _.getCode(code.innerHTML.replace(/(="")/gi,''));
+        document.querySelectorAll(`pre code`).forEach( code => {
+           
+            code.innerHTML = _.getCode(code.innerHTML.replace(/(="")/gi,''), code.closest('pre').getAttribute('language') );
             
         });
 
         // 열고 닫기 버튼
-        _.on('click', '.sp-code pre button', function (e) {
+        _.on('click', '.sp-code pre, .sp-code pre button', function (e) {
 
-            if (this.closest('pre').classList.contains('show')) {
-                this.closest('pre').classList.remove('show');
+            if (this.tagName === 'PRE') {
+                if (!this.classList.contains('show')) {
+                    this.classList.add('show');
+                }
             } else {
-                this.closest('pre').classList.add('show');
+                if (this.closest('pre').classList.contains('show')) {
+                    this.closest('pre').classList.remove('show');
+                } else {
+                    this.closest('pre').classList.add('show');
+                }
             }
 
         });
 
         // 메뉴 만들기
-        let nav, sublink, submenu = document.querySelector('.sp-code-submenu');
-        if (submenu) document.querySelectorAll(`.sp-code-title`).forEach( (section, i) => {
+        let nav, sublink = '', submenu, subnav = document.querySelector('.sp-code-nav');
+        if (subnav) document.querySelectorAll('.sp-code h2').forEach( (section, i) => {
             
             nav = `<a name="sub-${i}"></a>`;
-            sublink = `<a href="#sub-${i}">${section.innerHTML}</a>`;
             section.insertAdjacentHTML('beforebegin', nav);
-            submenu.insertAdjacentHTML('beforeend', sublink);
+            sublink += `
+                <li pd="3-y">
+                    <a href="#sub-${i}" class="btn" pd="t6-x" w="100" h="100">${section.innerHTML}</a>
+                </li>
+            `;
             
+        });
+        if (subnav && sublink) {
+            subnav.insertAdjacentHTML('beforeend', `
+            <div class="sp-tree">
+                <ul>
+                    <li>
+                        <a href="#!" class="btn" pd="t6" w="100" h="100" line="0-b">Navigation</a>
+                        <ul pd="5-y">
+                            <small pd="6-x" font="2">코드</small>
+                            ${sublink}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            `);
+        };
+
+        document.body.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll(`[data-hljs] pre.show`).forEach( container => {
+                    container.classList.remove('show')
+                });
+            }
         });
 
     }

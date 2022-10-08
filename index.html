@@ -1,154 +1,879 @@
 <?php
-    require $_SERVER["DOCUMENT_ROOT"].'/inc/root.php';
-    require $var['root'].'/inc/layout/meta.html';
-    require $var['root'].'/inc/layout/header.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/meta.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/header.html';
 ?>
 
-<!-- container -->
-<div class="sp-temporary x-grid" split="h-min-auto-min" x-size="h100">
-    <div class="sp-temporary-element x-grid-col" x-size="wr25">
-
-        <!-- 사이드바 -->
-        <div class="x-grid" grid="2" x-size="h100">
-            <div class="x-grid-column">
-
-                <!-- container -->
-                <div class="x-grid" split="v-min-auto-min" x-size="h100">
-                    <div class="x-grid-col">
-                        <a href="/" class="x-btn" x-fs="lg" x-pd="2xl" x-radius="xs" x-color="#neg-8" x-size="w100">
-                            <i class="ph-bandaids"></i>
-                            SPSTRAP
-                        </a>
-                    </div>
-                    <div class="x-grid-col">
-
-                        <!-- container -->
-                        <div class="x-flex" direction="col" x-gap="xs" x-pd="2xl-x">
-                            <h5>CSS</h5>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">grid</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">flex</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">box</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">font</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">color</a></div>
-                            <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">button</a></div>
-                            <div class="x-flex-col">
-                                <a href="#!" class="x-btn" x-size="w100">button</a>
-                                <!-- container -->
-                                <div class="x-flex" direction="col" x-gap="xs" x-tpd="md">
-                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 1</a></div>
-                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 2</a></div>
-                                    <div class="x-flex-col"><a href="#!" class="x-btn" x-size="w100">sub 3</a></div>
-                                </div><!-- // -->
-                            </div>
-                        </div><!-- // -->
-
-                    </div>
-                    <div class="x-grid-col">
-                        <div x-tpd="2xl" x-break="all">
-                            <p x-fs="sm" x-color="#prev-3">
-                                © 2021 — SPSTRAP License / dev.spstrap@gmail.com
-                            </p>
-                            <hr x-color="|light-o-3" x-mg="md-y" />
-                            <p x-fs="2xs" x-color="#prev-7">
-                                SPSTRAP. COPYRIGHT(C) 2021 Spstrap LTD. ALL RIGHTS RESERVED.
-                            </p>
-                        </div>
-                    </div>
-                </div><!-- // -->
-
-            </div>
-            <div class="sp-code-submenu x-grid-column"></div>
-        </div><!-- // -->
-
-    </div>
-    <div class="x-grid-col" x-scroll="y">
-        <div class="sp-contents">
-
-            <!-- SPBOARD. 라이브러리 설치하기 -->
-            <div class="sp-code" data-hljs="html">
-                <p class="sp-code-title" x-color="#neg-7">SPBOARD. 라이브러리 설치하기</p>
-                <hr x-color="|light-o-2" x-mg="md-y" />
-                <div class="sp-code-alert" x-tpd="2xl" x-color="dark-o-2|light-o-2" x-line="3xs" x-radius="md">
-                    Github Spstrap : <a href="https://github.com/spstrap/frontend-library" target="_blank">https://github.com/spstrap/frontend-library</a>
-                </div>
-                <textarea class="sp-code-preview">
-                    <!--
-                        Spstrap library v2
-                    
-                        * 기본적인 css 환경 설정은 spboard.css 파일에서 설정합니다.
-                        * 아래 3줄의 코드가 기본 설치 파일이며, 경로에 맞게 설치 해주시면 됩니다.
-                    -->
-                    
-                    <!-- Spstrap v2 -->
-                    <script defer type="module" src="/spstrap/script/spstrap.js"></script>
-                    <link rel="stylesheet" href="/spstrap/css/spstrap.css">
-                </textarea>
-            </div><!-- // -->
-
-            <!-- /// -->
-            <div class="sp-code" data-hljs="html">
-                <p class="sp-code-title" x-color="#sat-1">케케케</p>
-                <hr x-color="|light-o-2" x-mg="md-y" />
-                <textarea class="sp-code-preview">
-                    <table class="sp-code-table">
-                        <tr>
-                            <td>
-                                <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="sat-1#front"><strong>button - front</strong></button>
-                                <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="#back|sat-1" x-line="3xs"><strong>button - back</strong></button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="sat-1#prev-0"><strong>prev-0</strong></button>
-                                <button class="x-btn" x-fs="lg" x-tpd="2xl" x-radius="2xs" x-color="sat-1#next-9"><strong>next-9</strong></button>
-                            </td>
-                        </tr>
-                    </table>
-                </textarea>
-            </div><!-- // -->
-
-
-
-
-            <p x-fs="3xs">123abd가나다</p>
-            <p x-fs="2xs">123abd가나다</p>
-            <p x-fs="xs">123abd가나다</p>
-            <p x-fs="sm">123abd가나다</p>
-            <p x-fs="md" x-color="#sat-1">123abd가나다</p>
-            <p x-fs="lg">123abd가나다</p>
-            <p x-fs="xl">123abd가나다</p>
-            <p x-fs="2xl">123abd가나다</p>
-            <p x-fs="3xl">123abd가나다</p>
-            <p x-fs="4xl">123abd가나다</p>
-            <p x-fs="5xl">123abd가나다</p>
-            <p x-fs="6xl">123abd가나다</p>
-            <p x-fs="7xl">123abd가나다</p>
-            <p x-fs="8xl">123abd가나다</p>
-            <p x-fs="9xl">123abd가나다</p>
-            <hr x-color="|sat-1" x-mg="xl-y" />
-            <h1>123abd가나다</h1>
-            <h2>123abd가나다</h2>
-            <h3>123abd가나다</h3>
-            <h4>123abd가나다</h4>
-            <h5>123abd가나다</h5>
-            <h6>123abd가나다</h6>
-            <p x-pd="3xl">
-                <button class="x-btn" x-pd="3xl" x-radius="xs" x-color="sat-1#prev-1|prev-1" x-line="3xs"><strong>sat-1</strong></button>
-                <button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="sat-1#next-1|next-1" x-line="3xs"><strong>sat-1</strong></button>
+<nav>
+    <div class="flex" w="100" h="100" grid="1" sort="v-center">
+        <div class="flex-col">
+            <h2 pd="t6" font="2">Spstrap v2</h2>
+        </div>
+        <div class="flex-col">
+            <h1 pd="t6" unpd="t">Easy handling of HTML</h1>
+        </div>
+        <div class="flex-col">
+            <p pd="t6" unpd="t">
+                Spstrap CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, <br />
+                generating the corresponding styles and then writing them to a static CSS file.
             </p>
-            <p x-pd="3xl" x-mg="3xl" x-color="|sat-1" x-line="3xs"><button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="|sat-1" x-line="3xs"><strong>sat-1</strong></button></p>
-            <p x-pd="3xl">
-                <button class="x-btn" x-pd="3xl" x-radius="xs" x-color="prev-1" x-line="3xs"><strong>sat-1</strong></button>
-                <button class="x-btn" x-tpd="3xl" x-radius="xs" x-color="next-1" x-line="3xs"><strong>sat-1</strong></button>
-            </p>
-
         </div>
     </div>
-    <?php
-        require $var['root'].'/inc/layout/editer.html';
-    ?>
-</div><!-- // -->
+</nav>
+<article pd="t6">
+
+
+    <div id="app"></div>
+    <script>
+    export default class Items extends Component {
+  get filteredItems () {
+    const { isFilter, items } = this.$state;
+    return items.filter(({ active }) => (isFilter === 1 && active) ||
+                                        (isFilter === 2 && !active) ||
+                                        isFilter === 0);
+  }
+
+  setup() {
+    this.$state = {
+      isFilter: 0,
+      items: [
+        {
+          seq: 1,
+          contents: 'item1',
+          active: false,
+        },
+        {
+          seq: 2,
+          contents: 'item2',
+          active: true,
+        }
+      ]
+    };
+  }
+
+  template() {
+    return `
+      <header>
+        <input type="text" class="appender" placeholder="아이템 내용 입력" />
+      </header>
+      <main>
+        <ul>
+          ${this.filteredItems.map(({contents, active, seq}) => `
+            <li data-seq="${seq}">
+              ${contents}
+              <button class="toggleBtn" style="color: ${active ? '#09F' : '#F09'}">
+                ${active ? '활성' : '비활성'}
+              </button>
+              <button class="deleteBtn">삭제</button>
+            </li>
+          `).join('')}
+        </ul>
+      </main>
+      <footer>
+        <button class="filterBtn" data-is-filter="0">전체 보기</button>
+        <button class="filterBtn" data-is-filter="1">활성 보기</button>
+        <button class="filterBtn" data-is-filter="2">비활성 보기</button>
+      </footer>
+    `
+  }
+
+  setEvent() {
+    this.addEvent('keyup', '.appender', ({ key, target }) => {
+      if (key !== 'Enter') return;
+      const {items} = this.$state;
+      const seq = Math.max(0, ...items.map(v => v.seq)) + 1;
+      const contents = target.value;
+      const active = false;
+      this.setState({
+        items: [
+          ...items,
+          {seq, contents, active}
+        ]
+      });
+    });
+
+    this.addEvent('click', '.deleteBtn', ({target}) => {
+      const items = [ ...this.$state.items ];;
+      const seq = Number(target.closest('[data-seq]').dataset.seq);
+      items.splice(items.findIndex(v => v.seq === seq), 1);
+      this.setState({items});
+    });
+
+    this.addEvent('click', '.toggleBtn', ({target}) => {
+      const items = [ ...this.$state.items ];
+      const seq = Number(target.closest('[data-seq]').dataset.seq);
+      const index = items.findIndex(v => v.seq === seq);
+      items[index].active = !items[index].active;
+      this.setState({items});
+    });
+
+    this.addEvent('click', '.filterBtn', ({ target }) => {
+      this.setState({ isFilter: Number(target.dataset.isFilter) });
+    });
+  }
+}
+    </script>
+
+
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+    하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />하하<br />
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <?php
-    require $var['root'].'/inc/layout/footer.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/footer.html';
 ?>
+
+<div class="flex" gap="9" sort="col" pd="9">
+
+    <!-- 폰트 -->
+    <div pd="9" line="1">
+        <h1>폰트</h1>
+        <div class="flex" gap="9">
+            <div class="flex-col">
+                <p font="0">font - 0</p>
+                <p font="1">font - 1</p>
+                <p font="2">font - 2</p>
+                <p font="3">font - 3</p>
+                <p font="4">font - 4</p>
+                <p font="5">font - 5</p>
+                <p font="6">font - 6</p>
+                <p font="7">font - 7</p>
+                <p font="8">font - 8</p>
+                <p font="9">font - 9</p>
+            </div>
+            <div class="flex-col">
+                <p font="x1">font - x1</p>
+                <p font="x2">font - x2</p>
+                <p font="x3">font - x3</p>
+                <p font="x4">font - x4</p>
+                <p font="x5">font - x5</p>
+                <p font="x6">font - x6</p>
+                <p font="x7">font - x7</p>
+                <p font="x8">font - x8</p>
+                <p font="x9">font - x9</p>
+            </div>
+            <div class="flex-col">
+                <p font="x9-bold">font - x9-bold</p>
+                <p font="x9-strike">font - x9-strike</p>
+                <p font="x9-over">font - x9-over</p>
+                <p font="x9-under">font - x9-under</p>
+                <p font="x9-italic">font - x9-italic</p>
+            </div>
+            <div class="flex-col">
+                <p font="x9-capital">text expansion</p>
+                <p font="x9-lower">text expansion</p>
+                <p font="x9-upper">text expansion</p>
+                <p font="x9-upper">text expansion</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 인라인 정렬 -->
+    <div pd="9" line="1">
+        <h1>인라인 정렬</h1>
+        <div class="flex" grid="2">
+            <div class="flex-col">
+                <div break="keep" line="0" pd="5" talign="left">
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                </div>
+                <div break="keep" line="0" pd="5" talign="center">
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                </div>
+                <div break="keep" line="0" pd="5" talign="right">
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                    우리 그것을 오아이스도 불어 뭇 피다. 오직 갑설산에서고동을 미인을 무엇을 현저하게 사막이다.
+                </div>
+            </div>
+            <div class="flex-col">
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - baseline : <i class="ph-smiley" font="x9" talign="baseline"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - sub : <i class="ph-smiley" font="x9" talign="sub"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - baseline : <i class="ph-smiley" font="x9" talign="baseline"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - super : <i class="ph-smiley" font="x9" talign="super"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - top : <i class="ph-smiley" font="x9" talign="top"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - middle : <i class="ph-smiley" font="x9" talign="middle"></i>
+                </div>
+                <div break="keep" line="0" pd="5" talign="justify">
+                    인라인 - bottom : <i class="ph-smiley" font="x9" talign="bottom"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    <!-- 브레이크 -->
+    <div pd="9" line="1">
+        <h1>브레이크</h1>
+        <div pd="5" line="0-b">
+            <p break="all">
+                break - all
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="keep">
+                break - keep
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="word">
+                break - word
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#1">
+                break - #1
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#2">
+                break - #2
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#3">
+                break - #3
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#4">
+                break - #4
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#5">
+                break - #5
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#6">
+                break - #6
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#7">
+                break - #7
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#8">
+                break - #8
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+        <div pd="5" line="0-b">
+            <p break="#9">
+                break - #9
+                우리 그것을 오아이스도 불어 뭇 피다. 오직 갑 설산에서 고동을 미인을 무엇을 현저하게 사막이다. 위하여 살았으며, 열락의 이상이 가는 찬미를 생명을 그리하였는가? 얼마나 전인 피고, 이상은 든 있다. 사라지지 불어 인류의 보배를 웅대한 속에서 있을 뿐이다. 인류의 이 대한 같이, 위하여 운다. 얼음에 가치를 방황하였으며, 그들의 고행을 것은 역사를 것이다.보라, 이것이다. 피는 품었기 원질이 공자는 때문이다. 되는 투명하되 우리의 든 인도하겠다는 봄바람이다.
+                피가 그들에게 거선의 보내는 말이다. 보배를 크고 뛰노는 천자만홍이 사막이다. 인생을 듣기만 이상의 무한한 인류의 대중을 가장 인생에 공자는 뿐이다. 이것이야말로 아니한 그러므로 품었기 없는 웅대한 봄바람이다. 과실이 피는 그들은 긴지라 듣는다. 실로 피가 용감하고 가치를 미인을 위하여, 청춘에서만 것이다. 있는 구하지 싶이 봄바람을 내려온 예수는 그들에게 부패뿐이다. 청춘 풀이 열락의 청춘이 있는 거선의 피가 눈이 사막이다. 생의 만천하의 관현악이며, 청춘 그들의 없는 봄날의 내는 뿐이다. 오직 그들의 사랑의 열락의 뜨고, 황금시대를 방지하는 사막이다. 옷을 찬미를 있음으로써 방황하였으며, 뭇 원대하고, 황금시대를 인생을 있으랴?
+            </p>
+        </div>
+    </div>
+
+    <!-- 패딩 -->
+    <div pd="9" line="1">
+        <h1>패딩</h1>
+        <div>
+            <p pd="0" line="1">padding - 0</p>
+            <p pd="1" line="1">padding - 1</p>
+            <p pd="2" line="1">padding - 2</p>
+            <p pd="3" line="1">padding - 3</p>
+            <p pd="4" line="1">padding - 4</p>
+            <p pd="5" line="1">padding - 5</p>
+            <p pd="6" line="1">padding - 6</p>
+            <p pd="7" line="1">padding - 7</p>
+            <p pd="8" line="1">padding - 8</p>
+            <p pd="9" line="1">padding - 9</p>
+        </div>
+    </div>
+
+    <!-- 마진 -->
+    <div pd="9" line="1">
+        <h1>마진</h1>
+        <div>
+            <p mg="0" line="1">margin - 0</p>
+            <p mg="1" line="1">margin - 1</p>
+            <p mg="2" line="1">margin - 2</p>
+            <p mg="3" line="1">margin - 3</p>
+            <p mg="4" line="1">margin - 4</p>
+            <p mg="5" line="1">margin - 5</p>
+            <p mg="6" line="1">margin - 6</p>
+            <p mg="7" line="1">margin - 7</p>
+            <p mg="8" line="1">margin - 8</p>
+            <p mg="9" line="1">margin - 9</p>
+        </div>
+    </div>
+
+    <!-- 구분선 -->
+    <div pd="9" line="1">
+        <h1>구분선</h1>
+        <div class="flex" grid="2">
+            <div class="flex-col">
+                <hr mg="5-y" line="0-t" />
+                <hr mg="5-y" line="0-dotted-t" />
+                <hr mg="5-y" line="0-dashed-t" />
+                <hr mg="5-y" line="2-double-t" /><!-- 더블은 최소 2부터 표현함 -->
+                <hr mg="5-y" line="0-groove-t" />
+                <hr mg="5-y" line="0-outset-t" />
+                <hr mg="5-y" line="0-ridge-t" />
+            </div>
+            <div class="flex-col">
+                <hr mg="5-y" line="1-t" />
+                <hr mg="5-y" line="2-t" />
+                <hr mg="5-y" line="3-t" />
+                <hr mg="5-y" line="4-t" />
+                <hr mg="5-y" line="5-t" />
+                <hr mg="5-y" line="6-t" />
+                <hr mg="5-y" line="7-t" />
+                <hr mg="5-y" line="8-t" />
+                <hr mg="5-y" line="9-t" />
+            </div>
+        </div>
+    </div>
+
+    <!-- 테이블 -->
+    <div pd="9" line="1">
+        <h1>테이블</h1>
+        <div class="flex" grid="5">
+            <div class="flex-col">
+                <table tpd="5" tline="0">
+                    <thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="flex-col">
+                <table tpd="5" tline="0-x">
+                    <thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="flex-col">
+                <table tpd="5" tline="0-y">
+                    <thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="flex-col">
+                <table tpd="5" tline="0-x">
+                    <thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                
+                                <table tpd="5">
+                                    <thead>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="flex-col">
+                <table tpd="5" tline="0-y">
+                    <thead>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                
+                                <table tpd="5">
+                                    <thead>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 플랙스 -->
+    <div pd="9" line="1">
+        <h1>플랙스</h1>
+        <div class="flex" grid="2">
+            <div class="flex-col" pd="9-r">
+                <div class="flex" line="0">
+                    1
+                </div>
+                <div class="flex" grid="2">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                </div>
+                <div class="flex" grid="3">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                </div>
+                <div class="flex" grid="4">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                </div>
+                <div class="flex" grid="5">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                </div>
+                <div class="flex" grid="6">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                </div>
+                <div class="flex" grid="7">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                    <div class="flex-col" line="0">7</div>
+                </div>
+                <div class="flex" grid="8">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                    <div class="flex-col" line="0">7</div>
+                    <div class="flex-col" line="0">8</div>
+                </div>
+                <div class="flex" grid="9">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                    <div class="flex-col" line="0">7</div>
+                    <div class="flex-col" line="0">8</div>
+                    <div class="flex-col" line="0">9</div>
+                </div>
+                <div class="flex" grid="10">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                    <div class="flex-col" line="0">7</div>
+                    <div class="flex-col" line="0">8</div>
+                    <div class="flex-col" line="0">9</div>
+                    <div class="flex-col" line="0">10</div>
+                </div>
+            </div>
+            <div class="flex-col">
+                <h1>flex 1 -> 0</h1>
+                <div class="flex" grid>
+                    <div class="flex-col" line="0" flex="1">1</div>
+                    <div class="flex-col" line="0">2</div>
+                </div>
+                <h1>flex 0 -> 1</h1>
+                <div class="flex" grid>
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0" flex="1">2</div>
+                </div>
+                <h1>flex fill</h1>
+                <div class="flex" grid="4" sort="fill">
+                    <div class="flex-col" line="0">1</div>
+                    <div class="flex-col" line="0">2</div>
+                    <div class="flex-col" line="0">3</div>
+                    <div class="flex-col" line="0">4</div>
+                    <div class="flex-col" line="0">5</div>
+                    <div class="flex-col" line="0">6</div>
+                    <div class="flex-col" line="0">7</div>
+                    <div class="flex-col" line="0">8</div>
+                    <div class="flex-col" line="0">9</div>
+                    <div class="flex-col" line="0">10</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 플랙스 가로 정렬 -->
+    <div pd="9" line="1">
+        <h1>플랙스 가로 정렬</h1>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-start">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-center">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-end">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-between">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-around">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-evenly">
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+    </div>
+
+    <!-- 플랙스 세로 정렬 -->
+    <div pd="9" line="1">
+        <h1>플랙스 세로 정렬</h1>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill v-start">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex-col" line="0" pd="5" panda>컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill v-center">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex-col" line="0" pd="5" panda>컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill v-end">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex-col" line="0" pd="5" panda>컨텐츠</div>
+            <div class="flex-col" line="0" pd="5">컨텐츠</div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-fill">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-h-center">
+                <div class="flex flex-col" line="0" pd="5" panda>컨텐츠</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-h-end">
+                <div class="flex flex-col" line="0" pd="5" panda>컨텐츠</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-h-between">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 1</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 2</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 3</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-h-around">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 1</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 2</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 3</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+        <div class="flex" line="0" pd="5" sort="h-stretch-fill">
+            <div class="flex-col" line="0" pd="5">
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠<br />
+                컨텐츠
+            </div>
+            <div class="flex flex-col" line="0" pd="5" sort="col-rvs-h-evenly">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 1</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 2</div>
+                <div class="flex flex-col" line="0" pd="5" sort="v-center" panda>컨텐츠 3</div>
+            </div>
+            <div class="flex-col" line="0" pd="5">
+                <div class="flex flex-col" line="0" pd="5" sort="v-center">컨텐츠</div>
+            </div>
+        </div>
+    </div>
+
+</div>

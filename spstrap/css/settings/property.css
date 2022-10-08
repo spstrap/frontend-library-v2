@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+:root {
+
+    --line-height: 1.4;
+
+    --clamp-zoom: .9;                                                   /* 반응형 배율 : PC -> MOBILE 크기 변화 */
+    --clamp-ratio: -0.9167rem + 3.2639vw;                               /* 반응형 범위 : PC -> MOBILE 브라우저 크기에 반응 */
+    --clamp-fontsize: calc(var(--font-size) * var(--clamp-zoom));       /* 반응형 폰트 : 폰트의 반응 범위 */
+
+    --ratio-padding: .7;
+
+    --primary: #ff3300;
+
+    --text-color: #ccc;
+    --background-color: #333;
+
+    --font-size: 16px;
+    --font-size-1:  clamp(calc(var(--clamp-fontsize) * 0.70), var(--clamp-ratio), calc(var(--font-size) * 0.70));
+    --font-size-2:  clamp(calc(var(--clamp-fontsize) * 0.80), var(--clamp-ratio), calc(var(--font-size) * 0.80));
+    --font-size-3:  clamp(calc(var(--clamp-fontsize) * 0.90), var(--clamp-ratio), calc(var(--font-size) * 0.90));
+    --font-size-4:  clamp(calc(var(--clamp-fontsize) * 1.00), var(--clamp-ratio), calc(var(--font-size) * 1.00));
+    --font-size-5:  clamp(calc(var(--clamp-fontsize) * 1.10), var(--clamp-ratio), calc(var(--font-size) * 1.10));
+    --font-size-6:  clamp(calc(var(--clamp-fontsize) * 1.20), var(--clamp-ratio), calc(var(--font-size) * 1.20));
+    --font-size-7:  clamp(calc(var(--clamp-fontsize) * 1.30), var(--clamp-ratio), calc(var(--font-size) * 1.30));
+    --font-size-8:  clamp(calc(var(--clamp-fontsize) * 1.40), var(--clamp-ratio), calc(var(--font-size) * 1.40));
+    --font-size-9:  clamp(calc(var(--clamp-fontsize) * 1.50), var(--clamp-ratio), calc(var(--font-size) * 1.50));
+    --font-size-x1: clamp(calc(var(--clamp-fontsize) * 1.60), var(--clamp-ratio), calc(var(--font-size) * 1.60));
+    --font-size-x2: clamp(calc(var(--clamp-fontsize) * 1.70), var(--clamp-ratio), calc(var(--font-size) * 1.70));
+    --font-size-x3: clamp(calc(var(--clamp-fontsize) * 1.80), var(--clamp-ratio), calc(var(--font-size) * 1.80));
+    --font-size-x4: clamp(calc(var(--clamp-fontsize) * 1.90), var(--clamp-ratio), calc(var(--font-size) * 1.90));
+    --font-size-x5: clamp(calc(var(--clamp-fontsize) * 2.00), var(--clamp-ratio), calc(var(--font-size) * 2.00));
+    --font-size-x6: clamp(calc(var(--clamp-fontsize) * 2.25), var(--clamp-ratio), calc(var(--font-size) * 2.25));
+    --font-size-x7: clamp(calc(var(--clamp-fontsize) * 2.50), var(--clamp-ratio), calc(var(--font-size) * 2.50));
+    --font-size-x8: clamp(calc(var(--clamp-fontsize) * 2.75), var(--clamp-ratio), calc(var(--font-size) * 2.75));
+    --font-size-x9: clamp(calc(var(--clamp-fontsize) * 3.00), var(--clamp-ratio), calc(var(--font-size) * 3.00));
+
+    --zoom: .1;
+    --zoom-0: calc(1 + var(--zoom) * 0);
+    --zoom-1: calc(1 + var(--zoom) * 1);
+    --zoom-2: calc(1 + var(--zoom) * 2);
+    --zoom-3: calc(1 + var(--zoom) * 3);
+    --zoom-4: calc(1 + var(--zoom) * 4);
+    --zoom-5: calc(1 + var(--zoom) * 5);
+    --zoom-6: calc(1 + var(--zoom) * 6);
+    --zoom-7: calc(1 + var(--zoom) * 7);
+    --zoom-8: calc(1 + var(--zoom) * 8);
+    --zoom-9: calc(1 + var(--zoom) * 9);
+    
+    --gap: 1px; /* 반드시 고정 */
+    --gap-0: calc(var(--gap) * var(--zoom-0) * 1.00);
+    --gap-1: calc(var(--gap) * var(--zoom-1) * 2.00);
+    --gap-2: calc(var(--gap) * var(--zoom-2) * 3.00);
+    --gap-3: calc(var(--gap) * var(--zoom-3) * 4.00);
+    --gap-4: calc(var(--gap) * var(--zoom-4) * 5.00);
+    --gap-5: calc(var(--gap) * var(--zoom-5) * 6.00);
+    --gap-6: calc(var(--gap) * var(--zoom-6) * 7.00);
+    --gap-7: calc(var(--gap) * var(--zoom-7) * 8.00);
+    --gap-8: calc(var(--gap) * var(--zoom-8) * 9.00);
+    --gap-9: calc(var(--gap) * var(--zoom-9) * 10.0);
+
+    --padding: 1px; /* 반드시 고정 */
+    --padding-0: calc(var(--padding) * var(--zoom-0) * 1.00);
+    --padding-1: calc(var(--padding) * var(--zoom-1) * 2.00);
+    --padding-2: calc(var(--padding) * var(--zoom-2) * 3.00);
+    --padding-3: calc(var(--padding) * var(--zoom-3) * 4.00);
+    --padding-4: calc(var(--padding) * var(--zoom-4) * 5.00);
+    --padding-5: calc(var(--padding) * var(--zoom-5) * 10.0);
+    --padding-6: calc(var(--padding) * var(--zoom-6) * 15.0);
+    --padding-7: calc(var(--padding) * var(--zoom-7) * 20.0);
+    --padding-8: calc(var(--padding) * var(--zoom-8) * 25.0);
+    --padding-9: calc(var(--padding) * var(--zoom-9) * 30.0);
+
+    --padding-t-0: calc(var(--padding-0) * var(--ratio-padding)) var(--padding-0);
+    --padding-t-1: calc(var(--padding-1) * var(--ratio-padding)) var(--padding-1);
+    --padding-t-2: calc(var(--padding-2) * var(--ratio-padding)) var(--padding-2);
+    --padding-t-3: calc(var(--padding-3) * var(--ratio-padding)) var(--padding-3);
+    --padding-t-4: calc(var(--padding-4) * var(--ratio-padding)) var(--padding-4);
+    --padding-t-5: calc(var(--padding-5) * var(--ratio-padding)) var(--padding-5);
+    --padding-t-6: calc(var(--padding-6) * var(--ratio-padding)) var(--padding-6);
+    --padding-t-7: calc(var(--padding-7) * var(--ratio-padding)) var(--padding-7);
+    --padding-t-8: calc(var(--padding-8) * var(--ratio-padding)) var(--padding-8);
+    --padding-t-9: calc(var(--padding-9) * var(--ratio-padding)) var(--padding-9);
+
+    --margin: 1px; /* 반드시 고정 */
+    --margin-0: calc(var(--margin) * var(--zoom-0) * 1.00);
+    --margin-1: calc(var(--margin) * var(--zoom-1) * 2.00);
+    --margin-2: calc(var(--margin) * var(--zoom-2) * 3.00);
+    --margin-3: calc(var(--margin) * var(--zoom-3) * 4.00);
+    --margin-4: calc(var(--margin) * var(--zoom-4) * 5.00);
+    --margin-5: calc(var(--margin) * var(--zoom-5) * 10.0);
+    --margin-6: calc(var(--margin) * var(--zoom-6) * 15.0);
+    --margin-7: calc(var(--margin) * var(--zoom-7) * 20.0);
+    --margin-8: calc(var(--margin) * var(--zoom-8) * 25.0);
+    --margin-9: calc(var(--margin) * var(--zoom-9) * 30.0);
+
+    --border: 1px; /* 반드시 고정 */
+    --border-0: calc(var(--border) * var(--zoom-0) * 1.00);
+    --border-1: calc(var(--border) * var(--zoom-1) * 2.00);
+    --border-2: calc(var(--border) * var(--zoom-2) * 3.00);
+    --border-3: calc(var(--border) * var(--zoom-3) * 4.00);
+    --border-4: calc(var(--border) * var(--zoom-4) * 5.00);
+    --border-5: calc(var(--border) * var(--zoom-5) * 10.0);
+    --border-6: calc(var(--border) * var(--zoom-6) * 15.0);
+    --border-7: calc(var(--border) * var(--zoom-7) * 20.0);
+    --border-8: calc(var(--border) * var(--zoom-8) * 25.0);
+    --border-9: calc(var(--border) * var(--zoom-9) * 30.0);
+
+    --radius: 1px; /* 반드시 고정 */
+    --radius-0: calc(var(--radius) * var(--zoom-0) * 1.00);
+    --radius-1: calc(var(--radius) * var(--zoom-1) * 2.00);
+    --radius-2: calc(var(--radius) * var(--zoom-2) * 3.00);
+    --radius-3: calc(var(--radius) * var(--zoom-3) * 4.00);
+    --radius-4: calc(var(--radius) * var(--zoom-4) * 5.00);
+    --radius-5: calc(var(--radius) * var(--zoom-5) * 6.00);
+    --radius-6: calc(var(--radius) * var(--zoom-6) * 7.00);
+    --radius-7: calc(var(--radius) * var(--zoom-7) * 8.00);
+    --radius-8: calc(var(--radius) * var(--zoom-8) * 9.00);
+    --radius-9: calc(var(--radius) * var(--zoom-9) * 10.0);
+}
+
+/*
+** 폰트
+*/
+[font^="0"]  { font-size: 0; }
+[font^="1"]  { font-size: var(--font-size-1); }
+[font^="2"]  { font-size: var(--font-size-2); }
+[font^="3"]  { font-size: var(--font-size-3); }
+[font^="4"]  { font-size: var(--font-size-4); }
+[font^="5"]  { font-size: var(--font-size-5); }
+[font^="6"]  { font-size: var(--font-size-6); }
+[font^="7"]  { font-size: var(--font-size-7); }
+[font^="8"]  { font-size: var(--font-size-8); }
+[font^="9"]  { font-size: var(--font-size-9); }
+[font^="x1"] { font-size: var(--font-size-x1); }
+[font^="x2"] { font-size: var(--font-size-x2); }
+[font^="x3"] { font-size: var(--font-size-x3); }
+[font^="x4"] { font-size: var(--font-size-x4); }
+[font^="x5"] { font-size: var(--font-size-x5); }
+[font^="x6"] { font-size: var(--font-size-x6); }
+[font^="x7"] { font-size: var(--font-size-x7); }
+[font^="x8"] { font-size: var(--font-size-x8); }
+[font^="x9"] { font-size: var(--font-size-x9); }
+[font$="bold"] { font-weight: bold; }
+[font$="strike"] { text-decoration: line-through; }
+[font$="over"] { text-decoration: overline; }
+[font$="under"] { text-decoration: underline; }
+[font$="italic"] { font-style: italic; }
+[font$="capital"] { text-transform: capitalize; }
+[font$="lower"] { text-transform: lowercase; }
+[font$="upper"] { text-transform: uppercase; }
+
+/*
+** 인라인 정렬
+*/
+[talign="left"] { text-align: left; }
+[talign="center"] { text-align: center; }
+[talign="right"] { text-align: right; }
+[talign="justify"] { text-align: justify; }
+[talign="baseline"] { vertical-align: baseline; }
+[talign="sub"] { vertical-align: sub; }
+[talign="super"] { vertical-align: super; }
+[talign="middle"] { vertical-align: middle; }
+[talign="top"] { vertical-align: top; }
+[talign="bottom"] { vertical-align: bottom; }
+[talign="text-top"] { vertical-align: text-bottom; }
+[talign="text-bottom"] { vertical-align: text-bottom; }
+
+/*
+** 브레이크
+*/
+[break^="#"]:not([break="#1"]) {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+[break="all"] { word-break: break-all; }
+[break="keep"] { word-break: keep-all; }
+[break="word"] { word-break: break-word; }
+[break="nowrap"] { white-space: nowrap; }
+[break="#1"] { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+[break="#2"]  { -webkit-line-clamp: 2; }
+[break="#3"]  { -webkit-line-clamp: 3; }
+[break="#4"]  { -webkit-line-clamp: 4; }
+[break="#5"]  { -webkit-line-clamp: 5; }
+[break="#6"]  { -webkit-line-clamp: 6; }
+[break="#7"]  { -webkit-line-clamp: 7; }
+[break="#8"]  { -webkit-line-clamp: 8; }
+[break="#9"]  { -webkit-line-clamp: 9; }
+[break="#10"] { -webkit-line-clamp: 10; }
+
+/*
+** 그리드
+** 기본만 사용
+*/
+.grid {
+    display: grid;
+    grid-auto-columns: auto;
+}
+.grid[grid="auto"] { grid-auto-flow: column; }
+.grid[grid="1"]    { grid-template-columns: repeat(auto-fit, minmax(100.00%, 1fr)); }
+.grid[grid="2"]    { grid-template-columns: repeat(auto-fit, minmax(50.000%, 1fr)); }
+.grid[grid="3"]    { grid-template-columns: repeat(auto-fit, minmax(33.333%, 1fr)); }
+.grid[grid="4"]    { grid-template-columns: repeat(auto-fit, minmax(25.000%, 1fr)); }
+.grid[grid="5"]    { grid-template-columns: repeat(auto-fit, minmax(20.000%, 1fr)); }
+.grid[grid="6"]    { grid-template-columns: repeat(auto-fit, minmax(16.666%, 1fr)); }
+.grid[grid="7"]    { grid-template-columns: repeat(auto-fit, minmax(14.285%, 1fr)); }
+.grid[grid="8"]    { grid-template-columns: repeat(auto-fit, minmax(12.500%, 1fr)); }
+.grid[grid="9"]    { grid-template-columns: repeat(auto-fit, minmax(11.111%, 1fr)); }
+.grid[grid="10"]   { grid-template-columns: repeat(auto-fit, minmax(10.000%, 1fr)); }
+
+/*
+** 플랙스
+*/
+.flex { display: flex; }
+.flex > [flex="0"] { flex: 0; }
+.flex > [flex="1"] { flex: 1; }
+.flex-col { min-width: 0; }
+.flex[grid] { flex-wrap: wrap; }
+.flex[grid="1"]  > .flex-col { flex-basis: 100.00%; }
+.flex[grid="2"]  > .flex-col { flex-basis: 50.000%; }
+.flex[grid="3"]  > .flex-col { flex-basis: 33.333%; }
+.flex[grid="4"]  > .flex-col { flex-basis: 25.000%; }
+.flex[grid="5"]  > .flex-col { flex-basis: 20.000%; }
+.flex[grid="6"]  > .flex-col { flex-basis: 16.666% }
+.flex[grid="7"]  > .flex-col { flex-basis: 14.285%; }
+.flex[grid="8"]  > .flex-col { flex-basis: 12.500%; }
+.flex[grid="9"]  > .flex-col { flex-basis: 11.111%; }
+.flex[grid="10"] > .flex-col { flex-basis: 10.000%; }
+.flex[sort*="fill"] > .flex-col { flex-grow: 1; }
+.flex[sort*="h-stretch"] { justify-content: stretch; }
+.flex[sort*="h-start"] { justify-content: start; }
+.flex[sort*="h-center"] { justify-content: center; }
+.flex[sort*="h-end"] { justify-content: end; }
+.flex[sort*="h-between"] { justify-content: space-between; }
+.flex[sort*="h-around"] { justify-content: space-around; }
+.flex[sort*="h-evenly"] { justify-content: space-evenly; }
+.flex[sort*="v-stretch"] { align-items: stretch; }
+.flex[sort*="v-start"] { align-items: start; }
+.flex[sort*="v-center"] { align-items: center; }
+.flex[sort*="v-end"] { align-items: end; }
+.flex[sort*="v-between"] { align-content: space-between; }
+.flex[sort*="v-around"] { align-content: space-around; }
+.flex[sort*="v-evenly"] { align-content: space-evenly; }
+.flex[sort^="row"] { flex-direction: row; }
+.flex[sort^="row-rvs"] { flex-direction: row-reverse; }
+.flex[sort^="col"] { flex-direction: column; }
+.flex[sort^="col-rvs"] { flex-direction: column-reverse; }
+
+/*
+** 갭
+*/
+[gap^="0"] { gap: var(--gap-0); }
+[gap^="1"] { gap: var(--gap-1); }
+[gap^="2"] { gap: var(--gap-2); }
+[gap^="3"] { gap: var(--gap-3); }
+[gap^="4"] { gap: var(--gap-4); }
+[gap^="5"] { gap: var(--gap-5); }
+[gap^="6"] { gap: var(--gap-6); }
+[gap^="7"] { gap: var(--gap-7); }
+[gap^="8"] { gap: var(--gap-8); }
+[gap^="9"] { gap: var(--gap-9); }
+
+/*
+** 패딩
+*/
+[pd^="0"] { padding: var(--padding-0); }
+[pd^="1"] { padding: var(--padding-1); }
+[pd^="2"] { padding: var(--padding-2); }
+[pd^="3"] { padding: var(--padding-3); }
+[pd^="4"] { padding: var(--padding-4); }
+[pd^="5"] { padding: var(--padding-5); }
+[pd^="6"] { padding: var(--padding-6); }
+[pd^="7"] { padding: var(--padding-7); }
+[pd^="8"] { padding: var(--padding-8); }
+[pd^="9"] { padding: var(--padding-9); }
+[pd^="t0"] { padding: var(--padding-t-0); }
+[pd^="t1"] { padding: var(--padding-t-1); }
+[pd^="t2"] { padding: var(--padding-t-2); }
+[pd^="t3"] { padding: var(--padding-t-3); }
+[pd^="t4"] { padding: var(--padding-t-4); }
+[pd^="t5"] { padding: var(--padding-t-5); }
+[pd^="t6"] { padding: var(--padding-t-6); }
+[pd^="t7"] { padding: var(--padding-t-7); }
+[pd^="t8"] { padding: var(--padding-t-8); }
+[pd^="t9"] { padding: var(--padding-t-9); }
+[pd$="-x"] { padding-top: unset; padding-bottom: unset; }
+[pd$="-y"] { padding-left: unset; padding-right: unset; }
+[pd$="-t"] { padding-right: unset; padding-bottom: unset; padding-left: unset; }
+[pd$="-r"] { padding-top: unset; padding-bottom: unset; padding-left: unset; }
+[pd$="-b"] { padding-top: unset; padding-right: unset; padding-left: unset; }
+[pd$="-l"] { padding-top: unset; padding-right: unset; padding-bottom: unset; }
+[unpd="t"] { padding-top: unset; }
+[unpd="r"] { padding-top: unset; }
+[unpd="b"] { padding-top: unset; }
+[unpd="l"] { padding-top: unset; }
+
+/*
+** 마진
+*/
+[mg^="0"] { margin: var(--margin-0); }
+[mg^="1"] { margin: var(--margin-1); }
+[mg^="2"] { margin: var(--margin-2); }
+[mg^="3"] { margin: var(--margin-3); }
+[mg^="4"] { margin: var(--margin-4); }
+[mg^="5"] { margin: var(--margin-5); }
+[mg^="6"] { margin: var(--margin-6); }
+[mg^="7"] { margin: var(--margin-7); }
+[mg^="8"] { margin: var(--margin-8); }
+[mg^="9"] { margin: var(--margin-9); }
+[mg$="-x"] { margin-top: unset; margin-bottom: unset; }
+[mg$="-y"] { margin-left: unset; margin-right: unset; }
+[mg$="-t"] { margin-right: unset; margin-bottom: unset; margin-left: unset; }
+[mg$="-r"] { margin-top: unset; margin-bottom: unset; margin-left: unset; }
+[mg$="-b"] { margin-top: unset; margin-right: unset; margin-left: unset; }
+[mg$="-l"] { margin-top: unset; margin-right: unset; margin-bottom: unset; }
+
+/*
+** 보더
+*/
+[line] { border-style: solid; }
+[line^="0"] { border-width: var(--border-0); }
+[line^="1"] { border-width: var(--border-1); }
+[line^="2"] { border-width: var(--border-2); }
+[line^="3"] { border-width: var(--border-3); }
+[line^="4"] { border-width: var(--border-4); }
+[line^="5"] { border-width: var(--border-5); }
+[line^="6"] { border-width: var(--border-6); }
+[line^="7"] { border-width: var(--border-7); }
+[line^="8"] { border-width: var(--border-8); }
+[line^="9"] { border-width: var(--border-9); }
+[line*="solid"]  { border-style: solid; }
+[line*="dotted"] { border-style: dotted; }
+[line*="dashed"] { border-style: dashed; }
+[line*="double"] { border-style: double; }
+[line*="groove"] { border-style: groove; }
+[line*="outset"] { border-style: outset; }
+[line*="ridge"]  { border-style: ridge; }
+[line$="-x"] { border-right: unset; border-left: unset; }
+[line$="-y"] { border-top: unset; border-bottom: unset; }
+[line$="-t"] { border-right: unset; border-bottom: unset; border-left: unset; }
+[line$="-r"] { border-top: unset; border-bottom: unset; border-left: unset; }
+[line$="-b"] { border-top: unset; border-right: unset; border-left: unset; }
+[line$="-l"] { border-top: unset; border-right: unset; border-bottom: unset; }
+
+/*
+** 패딩 ( 테이블 )
+*/
+table[tpd^="0"] > tr > :is(th, td),
+table[tpd^="0"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-0); }
+table[tpd^="1"] > tr > :is(th, td),
+table[tpd^="1"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-1); }
+table[tpd^="2"] > tr > :is(th, td),
+table[tpd^="2"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-2); }
+table[tpd^="3"] > tr > :is(th, td),
+table[tpd^="3"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-3); }
+table[tpd^="4"] > tr > :is(th, td),
+table[tpd^="4"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-4); }
+table[tpd^="5"] > tr > :is(th, td),
+table[tpd^="5"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-5); }
+table[tpd^="6"] > tr > :is(th, td),
+table[tpd^="6"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-6); }
+table[tpd^="7"] > tr > :is(th, td),
+table[tpd^="7"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-7); }
+table[tpd^="8"] > tr > :is(th, td),
+table[tpd^="8"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-8); }
+table[tpd^="9"] > tr > :is(th, td),
+table[tpd^="9"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding: var(--padding-9); }
+table[tpd$="-x"] > tr > :is(th, td),
+table[tpd$="-x"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding-top: unset; padding-bottom: unset; }
+table[tpd$="-y"] > tr > :is(th, td),
+table[tpd$="-y"] > :is(thead, tbody, tfoot) > tr > :is(th, td) { padding-right: unset; padding-left: unset; }
+
+
+/*
+** 보더 ( 테이블 )
+*/
+table[tline] :is(th, td) { border-style: solid; }
+table[tline^="0"] :is(th, td) { border-width: var(--border-0); }
+table[tline^="1"] :is(th, td) { border-width: var(--border-1); }
+table[tline^="2"] :is(th, td) { border-width: var(--border-2); }
+table[tline^="3"] :is(th, td) { border-width: var(--border-3); }
+table[tline^="4"] :is(th, td) { border-width: var(--border-4); }
+table[tline^="5"] :is(th, td) { border-width: var(--border-5); }
+table[tline^="6"] :is(th, td) { border-width: var(--border-6); }
+table[tline^="7"] :is(th, td) { border-width: var(--border-7); }
+table[tline^="8"] :is(th, td) { border-width: var(--border-8); }
+table[tline^="9"] :is(th, td) { border-width: var(--border-9); }
+table[tline*="solid"]  :is(th, td) { border-style: solid; }
+table[tline*="dotted"] :is(th, td) { border-style: dotted; }
+table[tline*="dashed"] :is(th, td) { border-style: dashed; }
+table[tline*="double"] :is(th, td) { border-style: double; }
+table[tline*="groove"] :is(th, td) { border-style: groove; }
+table[tline*="outset"] :is(th, td) { border-style: outset; }
+table[tline*="ridge"]  :is(th, td) { border-style: ridge; }
+table[tline$="-x"] :is(th, td) { border-right: unset; border-left: unset; }
+table[tline$="-y"] :is(th, td) { border-top: unset; border-bottom: unset; }
+table[tline$="-t"] :is(th, td) { border-right: unset; border-bottom: unset; border-left: unset; }
+table[tline$="-r"] :is(th, td) { border-top: unset; border-bottom: unset; border-left: unset; }
+table[tline$="-b"] :is(th, td) { border-top: unset; border-right: unset; border-left: unset; }
+table[tline$="-l"] :is(th, td) { border-top: unset; border-right: unset; border-bottom: unset; }
+
+/*
+** 가로 사이즈
+*/
+[w="100"] { width: 100%; }
+[h="100"] { height: 100%; }
+
+/*
+** 라운드
+*/
+[radius^="0"] { border-radius: var(--radius-0); }
+[radius^="1"] { border-radius: var(--radius-1); }
+[radius^="2"] { border-radius: var(--radius-2); }
+[radius^="3"] { border-radius: var(--radius-3); }
+[radius^="4"] { border-radius: var(--radius-4); }
+[radius^="5"] { border-radius: var(--radius-5); }
+[radius^="6"] { border-radius: var(--radius-6); }
+[radius^="7"] { border-radius: var(--radius-7); }
+[radius^="8"] { border-radius: var(--radius-8); }
+[radius^="9"] { border-radius: var(--radius-9); }
+[radius^="max"] { border-radius: 100rem; }
+[radius^="circle"] { border-radius: 100%; }

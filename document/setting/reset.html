@@ -1,0 +1,46 @@
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/meta.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/header.html';
+?>
+
+<nav line="0-b">
+    <div class="flex" w="100" h="100" grid="1" sort="v-center">
+        <div class="flex-col" pd="3-t">
+            <h2 class="flex" pd="t6" font="2" gap="5" sort="v-center">
+                Setting
+                <i class="ph-arrow-right" font="1"></i>
+                Reset
+            </h2>
+        </div>
+        <div class="flex-col">
+            <h1 pd="t6" unpd="t">CSS 요소 리셋</h1>
+        </div>
+        <div class="flex-col">
+            <p pd="t6" font="3" unpd="t">
+                스타일시트 재설정의 목표는 기본 줄 높이, 여백 및 제목의 글꼴 크기 등과 같은 브라우저의 불일치를 줄이는 것입니다.<br />
+                여기에 제공된 재설정 스타일은 의도적으로 매우 일반적입니다. 예를 들어 <code>body</code> 요소에 대해 설정된 기본 색상이나 배경은 없습니다.<br />
+                자신의 프로젝트에서 변경되지 않은 상태로 이 베이스 코드를 사용하는 것은 특별히 권장하지 않습니다.
+            </p>
+        </div>
+    </div>
+</nav>
+<article pd="t6">
+    
+    <!-- 스타일 리셋 -->
+    <div class="sp-code" data-hljs="css" preview="false">
+        <h3 font="1" pd="2-y">./css/settings/<code highlight="8">reset.css</code></h3>
+        <div class="flex" line="0-b" pd="5-b" mg="5-b">
+            <h2>스타일 리셋</h2>
+        </div>
+        <textarea class="sp-code-preview">
+            <?php
+                require $_SERVER["DOCUMENT_ROOT"].'/spstrap/css/settings/reset.css';
+            ?>
+        </textarea>
+    </div><!-- // -->
+
+</article>
+
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/footer.html';
+?>

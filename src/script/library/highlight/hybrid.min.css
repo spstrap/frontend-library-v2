@@ -255,9 +255,7 @@
 .hljs { font-size: .75rem; white-space: pre; overflow-x: auto; border-radius: 5px; padding: 20px; color: #dadada; letter-spacing: 1px; }
 .hljs td { line-height: 1.6; }
 .hljs-ln-numbers { min-width: 35px; }
-.hljs i { background-color: #fff833; padding: 0 2px; display: inline-block; line-height: 1.3; font-style: normal;}
-.hljs i * { color: #000; }
+.sp-code pre .hljs i { font-style: normal; }
+.sp-code pre:not([language="css"]) .hljs i { background-color: #f03d4b; padding: 0 2px; display: inline-block; line-height: 1.3; font-style: normal; }
+.sp-code pre:not([language="css"]) .hljs i * { color: #fff; }
 .hljs .hljs-ln-n { color: #444; }
-.hljs,
-.sp-code pre::before { background: #1e1f21 !important; }
-.sp-code pre code.hljs { padding: 1.6rem 1.5rem 1.5rem 1.5rem; border-radius: 0 .3rem .3rem .3rem; }

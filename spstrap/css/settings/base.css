@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*
+** base
+**/
+html {
+    font-size: var(--font-size);
+}
+body, html {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: var(--line-height);
+    font-family: 'Noto Sans KR', 'Roboto', sans-serif;
+}
+
+/*
+** link
+*/
+a, a:visited {
+    color: var(--text-color);
+}
+a:hover,
+a:active,
+a:visited {
+    opacity: .9;
+}
+
+
+
+
+
+
+

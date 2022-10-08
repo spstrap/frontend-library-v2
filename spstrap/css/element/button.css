@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-.x-btn {
-    display: inline-flex;
+.btn {
+    display: inline-flex; align-items: center;
 }

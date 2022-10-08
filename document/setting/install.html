@@ -1,0 +1,49 @@
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/meta.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/header.html';
+?>
+
+<nav line="0-b">
+    <div class="flex" w="100" h="100" grid="1" sort="v-center">
+        <div class="flex-col" pd="3-t">
+            <h2 class="flex" pd="t6" font="2" gap="5" sort="v-center">
+                Setting
+                <i class="ph-arrow-right" font="1"></i>
+                Install
+            </h2>
+        </div>
+        <div class="flex-col">
+            <h1 pd="t6" unpd="t">시작하기</h1>
+        </div>
+        <div class="flex-col">
+            <p pd="t6" font="3" unpd="t">
+                Spstrap은 두줄의 코드를 입력하는것으로 간단하게 시작할 수 있습니다.<br />
+                <code>head</code> 영역에 넣어주시는게 가장 좋으며 <code>DOMContentLoaded</code> 로드 후 함수를 사용하세요.
+            </p>
+        </div>
+    </div>
+</nav>
+<article pd="t6">
+    
+    <!-- 코드 설치 -->
+    <div class="sp-code" data-hljs="html" preview="false">
+        <h3 font="1" pd="2-y">install <code highlight="8">library</code></h3>
+        <div class="flex" line="0-b" pd="5-b" mg="5-b">
+            <h2>코드 설치</h2>
+        </div>
+        <textarea class="sp-code-preview">
+            <!--
+                * Spstrap library v2
+                * 기본적인 css 환경 설정은 spboard.css 파일에서 설정합니다.
+                * 아래 3줄의 코드가 기본 설치 파일이며, 경로에 맞게 설치 해주시면 됩니다.
+            -->
+            <script defer type="module" src="[/spstrap/script/spstrap.js]"></script>
+            <link rel="stylesheet" href="[/spstrap/css/spstrap.css]">
+        </textarea>
+    </div><!-- // -->
+
+</article>
+
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/footer.html';
+?>

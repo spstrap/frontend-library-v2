@@ -1,0 +1,123 @@
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/meta.html';
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/header.html';
+?>
+
+<nav line="0-b">
+    <div class="flex" w="100" h="100" grid="1" sort="v-center">
+        <div class="flex-col" pd="3-t">
+            <h2 class="flex" pd="t6" font="2" gap="5" sort="v-center">
+                Element
+                <i class="ph-arrow-right" font="1"></i>
+                Base
+                <i class="ph-arrow-right" font="1"></i>
+                Font
+            </h2>
+        </div>
+        <div class="flex-col">
+            <h1 pd="t6" unpd="t">폰트</h1>
+        </div>
+        <div class="flex-col">
+            <p pd="t6" font="3" unpd="t">
+                폰트에 대한 기본 태그입니다.
+            </p>
+        </div>
+    </div>
+</nav>
+<article pd="t6">
+    
+    <!-- 폰트 사이즈 -->
+    <div class="sp-code" data-hljs="html" preview="true">
+        <h3 font="1" pd="2-y">
+            Attribute <code highlight="8">font</code>
+            <i class="ph-link-simple-horizontal"></i>
+            Path ./css/settings/<code highlight="8">property.css</code>
+        </h3>
+        <div class="flex" line="0-b" pd="5-b" mg="5-b">
+            <h2>폰트 사이즈</h2>
+        </div>
+        <div class="flex" line="0" pd="7" mg="5-b">
+            폰트 사이즈는 총 18개로 구성되어 있습니다.<br />
+            브라우저 크기에 따라 변경되도록 되어 있으며, 배율은 전역 프로퍼티에 영향을 받습니다.
+        </div>
+        <textarea class="sp-code-preview">
+            <!--
+                폰트 사이즈는 
+                전역 프로퍼티의 영향을 받음
+                --clamp-zoom: .9;                                               /* 반응형 배율 : PC -> MOBILE 크기 변화 */
+                --clamp-ratio: -0.9167rem + 3.2639vw;                           /* 반응형 범위 : PC -> MOBILE 브라우저 크기에 반응 */
+                --clamp-fontsize: calc(var(--font-size) * var(--clamp-zoom));   /* 반응형 폰트 : 폰트의 반응 범위 */
+            -->
+            <div class="flex" gap="9">
+                <div class="flex-col">
+                    <p [font="1"]>font = 1 / 폰트 = 1</p>
+                    <p [font="2"]>font = 2 / 폰트 = 2</p>
+                    <p [font="3"]>font = 3 / 폰트 = 3</p>
+                    <p [font="4"]>font = 4 / 폰트 = 4</p>
+                    <p [font="5"]>font = 5 / 폰트 = 5</p>
+                    <p [font="6"]>font = 6 / 폰트 = 6</p>
+                    <p [font="7"]>font = 7 / 폰트 = 7</p>
+                    <p [font="8"]>font = 8 / 폰트 = 8</p>
+                    <p [font="9"]>font = 9 / 폰트 = 9</p>
+                </div>
+                <div class="flex-col">
+                    <p [font="x1"]>font = x1 / 폰트 = x1</p>
+                    <p [font="x2"]>font = x2 / 폰트 = x2</p>
+                    <p [font="x3"]>font = x3 / 폰트 = x3</p>
+                    <p [font="x4"]>font = x4 / 폰트 = x4</p>
+                    <p [font="x5"]>font = x5 / 폰트 = x5</p>
+                    <p [font="x6"]>font = x6 / 폰트 = x6</p>
+                    <p [font="x7"]>font = x7 / 폰트 = x7</p>
+                    <p [font="x8"]>font = x8 / 폰트 = x8</p>
+                    <p [font="x9"]>font = x9 / 폰트 = x9</p>
+                </div>
+            </div>
+        </textarea>
+    </div><!-- // -->
+
+    <!-- 폰트 꾸미기 -->
+    <div class="sp-code" data-hljs="html" preview="true">
+        <h3 font="1" pd="2-y">
+            Attribute <code highlight="8">font</code>
+            <i class="ph-link-simple-horizontal"></i>
+            Path ./css/settings/<code highlight="8">property.css</code>
+        </h3>
+        <div class="flex" line="0-b" pd="5-b" mg="5-b">
+            <h2>폰트 꾸미기</h2>
+        </div>
+        <textarea class="sp-code-preview">
+            <!--
+                폰트 크기 속성과
+                조합해서 사용할 수 있습니다.
+                캐피탈 : 영문자의 첫번째 글자가 대문자로 표현됨
+            -->
+            <div class="flex" gap="9">
+                <div class="flex-col">
+                    <p [font="bold"]>bold / 볼드체</p>
+                    <p [font="strike"]>strike / 취소선</p>
+                    <p [font="over"]>over / 오버라인</p>
+                    <p [font="under"]>under / 언더라인</p>
+                    <p [font="italic"]>italic / 이탤릭</p>
+                    <p [font="capital"]>capital / 캐피탈</p>
+                    <p [font="lower"]>lower / 소문자</p>
+                    <p [font="upper"]>upper / 대문자</p>
+                </div>
+                <div class="flex-col"]>
+                    <p [font="x2-bold"]>font = x2 / bold / 볼드체</p>
+                    <p [font="x2-strike"]>font = x2 / strike / 취소선</p>
+                    <p [font="x2-over"]>font = x2 / over / 오버라인</p>
+                    <p [font="x2-under"]>font = x2 / under / 언더라인</p>
+                    <p [font="x2-italic"]>font = x2 / italic / 이탤릭</p>
+                    <p [font="x2-capital"]>font = x2 / capital / 캐피탈</p>
+                    <p [font="x2-lower"]>font = x2 / lower / 소문자</p>
+                    <p [font="x2-upper"]>font = x2 / upper / 대문자</p>
+                </div>
+            </div>
+        </textarea>
+    </div><!-- // -->
+
+</article>
+
+<?php
+    require $_SERVER["DOCUMENT_ROOT"].'/inc/layout/footer.html';
+?>
